@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 import { cn } from "@midday/ui/cn";
 import "@midday/ui/globals.css";
 import { Provider as Analytics } from "@midday/events/client";
@@ -98,43 +99,45 @@ const jsonLd = {
 
 export default function Layout({ children }: { children: ReactElement }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        {appConfig.cdn && (
-          <>
-            <link rel="preconnect" href={appConfig.cdn} />
-            <link rel="dns-prefetch" href={appConfig.cdn} />
-          </>
-        )}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-          }}
-        />
-      </head>
-      <body
-        className={cn(
-          `${hedvigSans.variable} ${hedvigSerif.variable} font-sans`,
-          "bg-background overflow-x-hidden font-sans antialiased",
-        )}
-      >
-        <NuqsAdapter>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            <main className="container mx-auto px-4 overflow-hidden md:overflow-visible">
-              {children}
-            </main>
-            <Footer />
-            <Analytics />
-          </ThemeProvider>
-        </NuqsAdapter>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          {appConfig.cdn && (
+            <>
+              <link rel="preconnect" href={appConfig.cdn} />
+              <link rel="dns-prefetch" href={appConfig.cdn} />
+            </>
+          )}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+            }}
+          />
+        </head>
+        <body
+          className={cn(
+            `${hedvigSans.variable} ${hedvigSerif.variable} font-sans`,
+            "bg-background overflow-x-hidden font-sans antialiased",
+          )}
+        >
+          <NuqsAdapter>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Header />
+              <main className="container mx-auto px-4 overflow-hidden md:overflow-visible">
+                {children}
+              </main>
+              <Footer />
+              <Analytics />
+            </ThemeProvider>
+          </NuqsAdapter>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

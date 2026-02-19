@@ -31,6 +31,15 @@ export interface Testimonial {
   videoPoster?: string;
 }
 
+function testimonialDialogId(name: string, index: number, mobile = false) {
+  const slug = name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const prefix = mobile ? "testimonial-mobile" : "testimonial";
+  return `${prefix}-${slug}-${index}`;
+}
+
 interface TestimonialsSectionProps {
   testimonials?: Testimonial[];
   title?: string;
@@ -560,7 +569,10 @@ export function TestimonialsSection({
 
             // Morphing dialog for regular testimonials
             return (
-              <MorphingDialog key={`testimonial-${testimonial.name}-${index}`}>
+              <MorphingDialog
+                key={`testimonial-${testimonial.name}-${index}`}
+                dialogId={testimonialDialogId(testimonial.name, index)}
+              >
                 <MorphingDialogTrigger
                   className="flex-shrink-0 group"
                   style={{
@@ -709,7 +721,13 @@ export function TestimonialsSection({
                     key={`testimonial-mobile-${testimonial.name}-${index}`}
                     className="w-[280px] flex-shrink-0 snap-start"
                   >
-                    <MorphingDialog>
+                    <MorphingDialog
+                      dialogId={testimonialDialogId(
+                        testimonial.name,
+                        index,
+                        true,
+                      )}
+                    >
                       <div
                         onClick={(e) => {
                           // Block click if there was a drag or if we're blocking clicks

@@ -44,14 +44,17 @@ function useMorphingDialog() {
 export type MorphingDialogProviderProps = {
   children: React.ReactNode;
   transition?: Transition;
+  dialogId?: string;
 };
 
 function MorphingDialogProvider({
   children,
   transition,
+  dialogId,
 }: MorphingDialogProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const uniqueId = useId();
+  const generatedId = useId();
+  const uniqueId = dialogId ?? generatedId;
   const triggerRef = useRef<HTMLButtonElement>(null!);
 
   const contextValue = useMemo(
@@ -82,9 +85,14 @@ function MorphingDialogProvider({
 export type MorphingDialogProps = {
   children: React.ReactNode;
   transition?: Transition;
+  dialogId?: string;
 };
 
-function MorphingDialog({ children, transition }: MorphingDialogProps) {
+function MorphingDialog({
+  children,
+  transition,
+  dialogId,
+}: MorphingDialogProps) {
   const defaultTransition: Transition = {
     type: "spring",
     stiffness: 200,
@@ -92,7 +100,7 @@ function MorphingDialog({ children, transition }: MorphingDialogProps) {
   };
 
   return (
-    <MorphingDialogProvider>
+    <MorphingDialogProvider dialogId={dialogId}>
       <MotionConfig transition={transition || defaultTransition}>
         {children}
       </MotionConfig>

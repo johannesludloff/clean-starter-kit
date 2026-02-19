@@ -307,7 +307,7 @@ export function Footer() {
             color: "hsl(var(--secondary))",
           }}
         >
-          midday
+          lujo
         </h1>
       </div>
     </footer>

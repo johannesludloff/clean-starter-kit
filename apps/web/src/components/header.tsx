@@ -1,5 +1,12 @@
 "use client";
 
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 import { cn } from "@midday/ui/cn";
 import { Icons } from "@midday/ui/icons";
 import { motion } from "motion/react";
@@ -798,14 +805,29 @@ export function Header({
                 )}
               </div>
 
-              {/* Sign in */}
-              <div className="border-l border-border pl-4">
-                <Link
-                  href="https://app.lujo.app/"
-                  className="text-sm transition-colors text-primary hover:text-primary/80"
-                >
-                  Sign in
-                </Link>
+              {/* Auth controls */}
+              <div className="border-l border-border pl-4 flex items-center gap-3">
+                <SignedOut>
+                  <SignInButton mode="modal">
+                    <button
+                      type="button"
+                      className="text-sm transition-colors text-primary hover:text-primary/80"
+                    >
+                      Sign in
+                    </button>
+                  </SignInButton>
+                  <SignUpButton mode="modal">
+                    <button
+                      type="button"
+                      className="text-sm transition-colors text-primary hover:text-primary/80"
+                    >
+                      Sign up
+                    </button>
+                  </SignUpButton>
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
               </div>
             </div>
           )}
@@ -1125,27 +1147,37 @@ export function Header({
                 )}
               </div>
 
-              {/* Sign in */}
+              {/* Auth controls */}
               <div className="border-t border-border pt-8 mt-8">
-                <Link
-                  href="https://app.lujo.app/"
-                  onTouchEnd={(e) => {
-                    const target = e.currentTarget;
-                    if (target) {
-                      target.blur();
-                      setTimeout(() => {
-                        if (target) {
-                          target.blur();
-                        }
-                      }, 100);
-                    }
-                  }}
-                  className="text-2xl font-sans transition-colors py-2 text-primary hover:text-primary xl:active:text-primary focus:outline-none focus-visible:outline-none touch-manipulation"
-                  onClick={() => setIsMenuOpen(false)}
-                  style={{ WebkitTapHighlightColor: "transparent" }}
-                >
-                  Sign in
-                </Link>
+                <SignedOut>
+                  <div className="flex items-center gap-5">
+                    <SignInButton mode="modal">
+                      <button
+                        type="button"
+                        className="text-2xl font-sans transition-colors py-2 text-primary hover:text-primary xl:active:text-primary focus:outline-none focus-visible:outline-none touch-manipulation"
+                        onClick={() => setIsMenuOpen(false)}
+                        style={{ WebkitTapHighlightColor: "transparent" }}
+                      >
+                        Sign in
+                      </button>
+                    </SignInButton>
+                    <SignUpButton mode="modal">
+                      <button
+                        type="button"
+                        className="text-2xl font-sans transition-colors py-2 text-primary hover:text-primary xl:active:text-primary focus:outline-none focus-visible:outline-none touch-manipulation"
+                        onClick={() => setIsMenuOpen(false)}
+                        style={{ WebkitTapHighlightColor: "transparent" }}
+                      >
+                        Sign up
+                      </button>
+                    </SignUpButton>
+                  </div>
+                </SignedOut>
+                <SignedIn>
+                  <div className="pt-2">
+                    <UserButton />
+                  </div>
+                </SignedIn>
               </div>
             </div>
           </div>

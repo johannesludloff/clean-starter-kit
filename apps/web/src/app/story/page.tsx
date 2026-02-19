@@ -108,36 +108,6 @@ export default function StoryPage() {
                 <div className="h-px w-full max-w-xs border-t border-border" />
               </div>
 
-              {/* What we're focused on */}
-              <section className="space-y-4">
-                <h2 className="font-sans text-base text-foreground">
-                  What we're focused on
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Lujo is built for founders and small teams who want to feel
-                  on top of their business without spending their time managing
-                  financial admin.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  We focus on:
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
-                  <li>Reducing manual and repetitive work</li>
-                  <li>Keeping financial data consistent and reliable</li>
-                  <li>Surfacing the right information at the right time</li>
-                  <li>Making it easy to understand what's happening and why</li>
-                  <li>
-                    Building software that works quietly in the background
-                  </li>
-                </ul>
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  Our goal is simple: when you use Lujo, you shouldn't have to
-                  wonder how your business is doing.
-                </p>
-                <p className="text-muted-foreground leading-relaxed font-medium">
-                  Your finances should explain themselves.
-                </p>
-              </section>
             </div>
 
             {/* Founders Image */}

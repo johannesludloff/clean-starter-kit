@@ -1,0 +1,13 @@
+{
+  "name": "clean-starter-kit",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter \"@midday/website\" dev",
+    "build": "bun run --filter \"@midday/website\" build",
+    "lint": "bun run --filter \"*\" lint"
+  }
+}

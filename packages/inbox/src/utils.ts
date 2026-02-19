@@ -48,10 +48,10 @@ export function decryptOAuthState(
 
 export function getInboxEmail(inboxId: string) {
   if (process.env.NODE_ENV !== "production") {
-    return `${inboxId}@inbox.staging.midday.ai`;
+    return `${inboxId}@inbox.staging.lujo.app`;
   }
 
-  return `${inboxId}@inbox.midday.ai`;
+  return `${inboxId}@inbox.lujo.app`;
 }
 
 /**

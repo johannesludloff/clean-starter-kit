@@ -1,7 +1,7 @@
 import type { InstitutionRecord } from "./institutions";
 import { logoExists, uploadLogo } from "./utils/storage";
 
-const CDN_PREFIX = "https://cdn-engine.midday.ai/";
+const CDN_PREFIX = "https://cdn-engine.lujo.app/";
 
 type SyncLogosResult = {
   uploaded: number;
@@ -16,7 +16,7 @@ type SyncLogosOptions = {
 
 /**
  * Extract the R2 object key from a CDN URL.
- * e.g. "https://cdn-engine.midday.ai/SEB.png" -> "SEB.png"
+ * e.g. "https://cdn-engine.lujo.app/SEB.png" -> "SEB.png"
  */
 function extractR2Key(cdnUrl: string): string | null {
   if (!cdnUrl.startsWith(CDN_PREFIX)) {

@@ -7,7 +7,7 @@ import { getQueryClient, HydrateClient, prefetch, trpc } from "@/trpc/server";
 import { geolocation } from "@/utils/geo";
 
 export const metadata: Metadata = {
-  title: "Overview | Midday",
+  title: "Overview | Lujo",
 };
 
 export default async function Overview() {

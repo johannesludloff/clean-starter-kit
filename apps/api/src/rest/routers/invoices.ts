@@ -137,10 +137,10 @@ app.openapi(
             ? JSON.stringify(invoice.bottomBlock)
             : null,
           pdfUrl: token
-            ? `${process.env.MIDDAY_DASHBOARD_URL}/api/download/invoice?token=${token}`
+            ? `${process.env.LUJO_DASHBOARD_URL}/api/download/invoice?token=${token}`
             : null,
           previewUrl: token
-            ? `${process.env.MIDDAY_DASHBOARD_URL}/i/${token}`
+            ? `${process.env.LUJO_DASHBOARD_URL}/i/${token}`
             : null,
         };
       }),
@@ -312,10 +312,10 @@ app.openapi(
         ? JSON.stringify(result.bottomBlock)
         : null,
       pdfUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/api/download/invoice?token=${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/api/download/invoice?token=${token}`
         : null,
       previewUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/i/${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/i/${token}`
         : null,
     };
 
@@ -623,10 +623,10 @@ app.openapi(
         ? JSON.stringify(result.bottomBlock)
         : null,
       pdfUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/api/download/invoice?token=${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/api/download/invoice?token=${token}`
         : null,
       previewUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/i/${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/i/${token}`
         : null,
     };
 
@@ -705,10 +705,10 @@ app.openapi(
         ? JSON.stringify(result.bottomBlock)
         : null,
       pdfUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/api/download/invoice?token=${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/api/download/invoice?token=${token}`
         : null,
       previewUrl: token
-        ? `${process.env.MIDDAY_DASHBOARD_URL}/i/${token}`
+        ? `${process.env.LUJO_DASHBOARD_URL}/i/${token}`
         : null,
     };
 

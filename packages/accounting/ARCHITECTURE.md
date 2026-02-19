@@ -357,11 +357,11 @@ flowchart TB
 
 ## Data Mapping
 
-### Midday to Xero Transaction Mapping
+### Lujo to Xero Transaction Mapping
 
 ```mermaid
 flowchart LR
-    subgraph Midday["Midday Transaction"]
+    subgraph Lujo["Lujo Transaction"]
         M1[id]
         M2[date]
         M3[amount]
@@ -441,7 +441,7 @@ sequenceDiagram
 
 ### Rate Limits
 
-| Provider | Limit | Midday Handling |
+| Provider | Limit | Lujo Handling |
 |----------|-------|-----------------|
 | Xero | 60 calls/minute | BullMQ limiter (20/sec max) |
 | Xero | 5000 calls/day | Batch processing reduces calls |

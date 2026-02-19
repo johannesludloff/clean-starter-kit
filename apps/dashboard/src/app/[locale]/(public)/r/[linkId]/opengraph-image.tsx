@@ -33,11 +33,11 @@ export default async function Image({ params }: Props) {
   }
 
   const hedvigSerifFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSerif/HedvigLettersSerif-Regular.ttf?c=1",
+    "https://cdn.lujo.app/fonts/HedvigSerif/HedvigLettersSerif-Regular.ttf?c=1",
   ).then((res) => res.arrayBuffer());
 
   const hedvigSansFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
+    "https://cdn.lujo.app/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
   ).then((res) => res.arrayBuffer());
 
   const chartName = getChartDisplayName(report.type as any);

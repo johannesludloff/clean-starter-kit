@@ -20,7 +20,7 @@ export function StartTrialStep() {
         transition={{ duration: 0.4, delay: 0.2 }}
         className="text-sm text-muted-foreground leading-relaxed"
       >
-        You're all set! Start your free trial and explore everything Midday has
+        You're all set! Start your free trial and explore everything Lujo has
         to offer.
       </motion.p>
     </div>

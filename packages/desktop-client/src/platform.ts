@@ -21,7 +21,7 @@ export function getDesktopScheme(): string {
  * Returns the deep link base URL (scheme + "://") for the current environment.
  *
  * @example
- * getDesktopSchemeUrl() // "midday://" in production, "midday-dev://" in dev
+ * getDesktopSchemeUrl() // "lujo://" in production, "midday-dev://" in dev
  */
 export function getDesktopSchemeUrl(): string {
   return `${getDesktopScheme()}://`;
@@ -57,7 +57,7 @@ export async function listenForDeepLinks(handler: DeepLinkHandler) {
  * @example
  * ```typescript
  * // In production:
- * createDeepLink('dashboard');           // "midday://dashboard"
+ * createDeepLink('dashboard');           // "lujo://dashboard"
  * // In dev:
  * createDeepLink('transactions/123');    // "midday-dev://transactions/123"
  * ```

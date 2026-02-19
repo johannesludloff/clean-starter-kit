@@ -1142,7 +1142,7 @@ export class FortnoxProvider extends BaseAccountingProvider {
             },
           ];
 
-      // Use the same description as shown in Midday
+      // Use the same description as shown in Lujo
       const baseDescription =
         tx.description || tx.counterpartyName || "Transaction";
 

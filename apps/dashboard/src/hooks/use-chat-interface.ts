@@ -30,7 +30,7 @@ export function useChatInterface() {
   // Clear artifact-type and reset title when navigating away from chat pages
   const handleNavigateAway = () => {
     setSelectedType(null);
-    document.title = "Overview | Midday";
+    document.title = "Overview | Lujo";
   };
 
   // Extract chatId from pathname when it changes

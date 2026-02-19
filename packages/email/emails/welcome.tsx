@@ -25,7 +25,7 @@ const baseUrl = getEmailUrl();
 
 export const WelcomeEmail = ({ fullName = "" }: Props) => {
   const firstName = fullName ? fullName.split(" ").at(0) : "";
-  const text = `${firstName ? `Hi ${firstName}, ` : ""}Welcome to Midday! I'm Pontus, one of the founders. It's really important to us that you have a great experience ramping up.`;
+  const text = `${firstName ? `Hi ${firstName}, ` : ""}Welcome to Lujo! I'm Pontus, one of the founders. It's really important to us that you have a great experience ramping up.`;
   const themeClasses = getEmailThemeClasses();
   const lightStyles = getEmailInlineStyles("light");
 
@@ -48,7 +48,7 @@ export const WelcomeEmail = ({ fullName = "" }: Props) => {
             className={`text-[21px] font-normal text-center p-0 my-[30px] mx-0 ${themeClasses.heading}`}
             style={{ color: lightStyles.text.color }}
           >
-            Welcome to Midday
+            Welcome to Lujo
           </Heading>
 
           <br />
@@ -63,16 +63,16 @@ export const WelcomeEmail = ({ fullName = "" }: Props) => {
             className={themeClasses.text}
             style={{ color: lightStyles.text.color }}
           >
-            Welcome to Midday! I'm Pontus, one of the founders.
+            Welcome to Lujo! I'm Pontus, one of the founders.
             <br />
             <br />
-            We built Midday from over 10 years of running our own businesses,
-            knowing firsthand the challenges that come with it. Midday is built
+            We built Lujo from over 10 years of running our own businesses,
+            knowing firsthand the challenges that come with it. Lujo is built
             together with our customers, and it's important to us that you know
             we're here when you need us.
             <br />
             <br />
-            Take your time to explore Midday at your own pace. If you ever want
+            Take your time to explore Lujo at your own pace. If you ever want
             to chat with us founders, you can schedule a time{" "}
             <Link
               href="https://cal.com/pontus-midday/15min"

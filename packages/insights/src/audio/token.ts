@@ -107,7 +107,7 @@ export async function verifyAudioToken(
 /**
  * Build the public audio URL with token for email links
  *
- * @param baseUrl - API base URL (e.g., "https://api.midday.ai")
+ * @param baseUrl - API base URL (e.g., "https://api.lujo.app")
  * @param insightId - The insight ID
  * @param token - The signed JWT token
  * @returns Full URL for public audio access

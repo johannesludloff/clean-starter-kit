@@ -47,7 +47,7 @@ export const invoicePaymentsRouter = createTRPCRouter({
     }
 
     // Return the REST endpoint URL that handles the OAuth flow
-    const apiUrl = process.env.MIDDAY_API_URL || "https://api.midday.ai";
+    const apiUrl = process.env.LUJO_API_URL || "https://api.lujo.app";
     return `${apiUrl}/invoice-payments/connect-stripe`;
   }),
 

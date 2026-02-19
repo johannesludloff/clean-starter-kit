@@ -14,7 +14,7 @@ export function getWelcomeMessage(isPrivateChannel = false) {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Hello there! 👋 I'm your new *Midday* bot. I'll send notifications about new transactions and receipt matches in this channel.",
+        text: "Hello there! 👋 I'm your new *Lujo* bot. I'll send notifications about new transactions and receipt matches in this channel.",
       },
     },
     {
@@ -32,7 +32,7 @@ export function getWelcomeMessage(isPrivateChannel = false) {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "⚠️ *Important:* This is a private channel. To enable full functionality, please invite the Midday bot to this channel by typing `/invite @Midday` or adding it through the channel settings.",
+        text: "⚠️ *Important:* This is a private channel. To enable full functionality, please invite the Lujo bot to this channel by typing `/invite @Lujo` or adding it through the channel settings.",
       },
     });
   }
@@ -47,7 +47,7 @@ export function getWelcomeMessage(isPrivateChannel = false) {
           text: "⚙️ Notification Settings",
           emoji: true,
         },
-        url: "https://app.midday.ai/apps?app=slack&settings=true",
+        url: "https://app.lujo.app/apps?app=slack&settings=true",
         action_id: "view_settings",
       },
     ],

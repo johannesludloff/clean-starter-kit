@@ -58,10 +58,10 @@ export class PlaidApi {
 
   #generateWebhookUrl(environment: "sandbox" | "production") {
     if (environment === "sandbox") {
-      return "https://staging.api.midday.ai/webhook/plaid";
+      return "https://staging.api.lujo.app/webhook/plaid";
     }
 
-    return "https://api.midday.ai/webhook/plaid";
+    return "https://api.lujo.app/webhook/plaid";
   }
 
   async getHealthCheck() {
@@ -208,7 +208,7 @@ export class PlaidApi {
     return this.#client.linkTokenCreate({
       client_id: this.#clientId,
       secret: this.#clientSecret,
-      client_name: "Midday",
+      client_name: "Lujo",
       products: [Products.Transactions],
       language,
       access_token: accessToken,

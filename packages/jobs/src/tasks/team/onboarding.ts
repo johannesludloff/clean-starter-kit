@@ -41,8 +41,8 @@ export const onboardTeam = schemaTask({
 
     await resend.emails.send({
       to: user.email,
-      subject: "Welcome to Midday",
-      from: "Pontus from Midday <pontus@midday.ai>",
+      subject: "Welcome to Lujo",
+      from: "Pontus from Lujo <pontus@lujo.app>",
       html: await render(
         WelcomeEmail({
           fullName: user.full_name,
@@ -59,7 +59,7 @@ export const onboardTeam = schemaTask({
 
     if (await shouldSendEmail(user.team_id)) {
       await resend.emails.send({
-        from: "Pontus from Midday <pontus@midday.ai>",
+        from: "Pontus from Lujo <pontus@lujo.app>",
         to: user.email,
         subject: "Your trial is expiring soon",
         html: await render(
@@ -74,7 +74,7 @@ export const onboardTeam = schemaTask({
 
     if (await shouldSendEmail(user.team_id)) {
       await resend.emails.send({
-        from: "Pontus from Midday <pontus@midday.ai>",
+        from: "Pontus from Lujo <pontus@lujo.app>",
         to: user.email,
         subject: "Your trial has ended",
         html: await render(TrialEndedEmail({ fullName: user.full_name })),

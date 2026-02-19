@@ -6,7 +6,7 @@ import { getQueryClient, trpc } from "@/trpc/server";
 import { getTrialDaysLeft } from "@/utils/trial";
 
 export const metadata: Metadata = {
-  title: "Upgrade | Midday",
+  title: "Upgrade | Lujo",
 };
 
 export default async function UpgradePage() {
@@ -34,7 +34,7 @@ export default async function UpgradePage() {
       if (hasDiscount) {
         return "Secure your 50% discount before trial ends";
       }
-      return "Unlock full access to Midday";
+      return "Unlock full access to Lujo";
     }
 
     // Expired trial - emphasize value and opportunity
@@ -42,7 +42,7 @@ export default async function UpgradePage() {
       return "Limited-time offer: Save 50% on Pro";
     }
 
-    return "Unlock full access to Midday";
+    return "Unlock full access to Lujo";
   };
 
   const getDescription = () => {
@@ -50,10 +50,10 @@ export default async function UpgradePage() {
 
     if (daysLeft !== undefined) {
       if (daysLeft > 0) {
-        return `${greeting}Your trial ends in ${daysLeft} ${daysLeft === 1 ? "day" : "days"}. Choose a plan now to continue using all of Midday's features and secure our limited-time discount—save 50% on the Pro plan.`;
+        return `${greeting}Your trial ends in ${daysLeft} ${daysLeft === 1 ? "day" : "days"}. Choose a plan now to continue using all of Lujo's features and secure our limited-time discount—save 50% on the Pro plan.`;
       }
 
-      return `${greeting}Your trial has ended. Choose a plan to continue using all of Midday's features and unlock your full potential.`;
+      return `${greeting}Your trial has ended. Choose a plan to continue using all of Lujo's features and unlock your full potential.`;
     }
 
     if (hasDiscount && discountPrice) {
@@ -63,7 +63,7 @@ export default async function UpgradePage() {
       return `${greeting}As a valued early customer, you qualify for our special discount pricing. Get the Pro plan for $${discountPrice}/month instead of the regular $99/month and save ${savePercentage}%.`;
     }
 
-    return `${greeting}Choose a plan to continue using all of Midday's features.`;
+    return `${greeting}Choose a plan to continue using all of Lujo's features.`;
   };
 
   return (

@@ -29,7 +29,7 @@ const downloadQuerySchema = z.object({
     .openapi({
       description: "The artifact download URL to proxy",
       example:
-        "https://github.com/midday-ai/midday/releases/download/midday-v1.0.0/Midday.app.tar.gz",
+        "https://github.com/midday-ai/midday/releases/download/midday-v1.0.0/Lujo.app.tar.gz",
       param: {
         in: "query",
         name: "url",
@@ -40,7 +40,7 @@ const downloadQuerySchema = z.object({
 
 function getGitHubHeaders(): Record<string, string> {
   const headers: Record<string, string> = {
-    "User-Agent": "Midday-Desktop-Updater",
+    "User-Agent": "Lujo-Desktop-Updater",
   };
 
   if (process.env.GITHUB_RELEASE_TOKEN) {

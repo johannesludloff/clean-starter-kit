@@ -121,7 +121,7 @@ app.openapi(
           });
         }
 
-        // Use channel ID to help identify the correct Midday team
+        // Use channel ID to help identify the correct Lujo team
         // Each Slack integration stores a channel_id during OAuth setup
         const slackApp = await getAppBySlackTeamId(db, {
           slackTeamId: team_id,
@@ -139,10 +139,10 @@ app.openapi(
 
         // @ts-expect-error - config is JSONB
         const token = slackApp.config.access_token;
-        const middayTeamId = slackApp.teamId;
+        const lujoTeamId = slackApp.teamId;
 
-        if (!middayTeamId) {
-          logger.error("Midday team ID not found in app integration", {
+        if (!lujoTeamId) {
+          logger.error("Lujo team ID not found in app integration", {
             slackTeamId: team_id,
             appId: slackApp.id,
           });
@@ -154,7 +154,7 @@ app.openapi(
         // Log for debugging - verify we're using the correct team
         logger.info("Found Slack app integration", {
           slackTeamId: team_id,
-          middayTeamId,
+          lujoTeamId,
           appId: slackApp.id,
           // @ts-expect-error - config is JSONB
           slackTeamName: slackApp.config.team_name,
@@ -171,7 +171,7 @@ app.openapi(
                 client,
                 userId: event.user,
                 db,
-                teamId: middayTeamId,
+                teamId: lujoTeamId,
                 slackApp: {
                   config: slackApp.config,
                   settings: slackApp.settings,
@@ -180,13 +180,13 @@ app.openapi(
                 logger.error("Failed to publish App Home", {
                   error: error instanceof Error ? error.message : String(error),
                   userId: event.user,
-                  middayTeamId,
+                  lujoTeamId,
                 });
               });
 
               logger.debug("Published App Home", {
                 userId: event.user,
-                middayTeamId,
+                lujoTeamId,
               });
             }
             break;
@@ -281,7 +281,7 @@ app.openapi(
 
               // Process file asynchronously - don't await to ACK Slack quickly
               fileShare(fileShareEvent, {
-                teamId: middayTeamId,
+                teamId: lujoTeamId,
                 token,
               }).catch((error) => {
                 logger.error(

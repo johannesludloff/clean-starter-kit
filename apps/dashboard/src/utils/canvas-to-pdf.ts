@@ -326,9 +326,9 @@ async function createPdfFromCanvas(
   // Add metadata
   pdf.setProperties({
     title: "Canvas Report",
-    subject: "Generated from Midday Dashboard",
-    author: "Midday",
-    creator: "Midday Dashboard",
+    subject: "Generated from Lujo Dashboard",
+    author: "Lujo",
+    creator: "Lujo Dashboard",
   });
 
   pdf.save(options.filename);
@@ -394,9 +394,9 @@ async function createPdfBlobFromCanvas(
   // Add metadata
   pdf.setProperties({
     title: "Canvas Report",
-    subject: "Generated from Midday Dashboard",
-    author: "Midday",
-    creator: "Midday Dashboard",
+    subject: "Generated from Lujo Dashboard",
+    author: "Lujo",
+    creator: "Lujo Dashboard",
   });
 
   return pdf.output("blob");

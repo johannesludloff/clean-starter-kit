@@ -28,9 +28,9 @@ interface Props {
 
 export const InvoiceReminderEmail = ({
   companyName = "Customer",
-  teamName = "Midday",
+  teamName = "Lujo",
   invoiceNumber = "INV-0001",
-  link = "https://app.midday.ai/i/1234567890",
+  link = "https://app.lujo.app/i/1234567890",
   amount,
   currency,
   dueDate,

@@ -317,7 +317,7 @@ export default function TermsPage() {
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     If you believe your work has been used in a way that
-                    constitutes infringement, please email dmca@midday.ai with:
+                    constitutes infringement, please email dmca@lujo.app with:
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
                     <li>A detailed description of the material,</li>
@@ -469,10 +469,10 @@ export default function TermsPage() {
                   </p>
                   <p className="text-foreground leading-relaxed">
                     <a
-                      href="mailto:support@midday.ai"
+                      href="mailto:support@lujo.app"
                       className="text-foreground hover:text-muted-foreground transition-colors"
                     >
-                      support@midday.ai
+                      support@lujo.app
                     </a>
                   </p>
                 </section>

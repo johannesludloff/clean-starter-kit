@@ -15,4 +15,4 @@ export const LocalStorageKeys = {
   MetricsFilter: "metrics-filter-preferences",
 };
 
-export const SUPPORT_EMAIL = "support@midday.ai";
+export const SUPPORT_EMAIL = "support@lujo.app";

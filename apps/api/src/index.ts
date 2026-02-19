@@ -110,13 +110,13 @@ app.doc("/openapi", {
   openapi: "3.1.0",
   info: {
     version: "0.0.1",
-    title: "Midday API",
+    title: "Lujo API",
     description:
-      "Midday is a platform for Invoicing, Time tracking, File reconciliation, Storage, Financial Overview & your own Assistant.",
+      "Lujo is a platform for Invoicing, Time tracking, File reconciliation, Storage, Financial Overview & your own Assistant.",
     contact: {
-      name: "Midday Support",
-      email: "engineer@midday.ai",
-      url: "https://midday.ai",
+      name: "Lujo Support",
+      email: "engineer@lujo.app",
+      url: "https://lujo.app",
     },
     license: {
       name: "AGPL-3.0 license",
@@ -125,7 +125,7 @@ app.doc("/openapi", {
   },
   servers: [
     {
-      url: "https://api.midday.ai",
+      url: "https://api.lujo.app",
       description: "Production API",
     },
   ],
@@ -142,12 +142,12 @@ app.openAPIRegistry.registerComponent("securitySchemes", "token", {
   type: "http",
   scheme: "bearer",
   description: "Default authentication mechanism",
-  "x-speakeasy-example": "MIDDAY_API_KEY",
+  "x-speakeasy-example": "LUJO_API_KEY",
 });
 
 app.get(
   "/",
-  Scalar({ url: "/openapi", pageTitle: "Midday API", theme: "saturn" }),
+  Scalar({ url: "/openapi", pageTitle: "Lujo API", theme: "saturn" }),
 );
 
 app.route("/", routers);

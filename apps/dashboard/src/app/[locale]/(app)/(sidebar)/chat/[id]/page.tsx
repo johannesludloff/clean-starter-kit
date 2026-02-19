@@ -8,7 +8,7 @@ import { getQueryClient, HydrateClient, prefetch, trpc } from "@/trpc/server";
 import { geolocation } from "@/utils/geo";
 
 export const metadata: Metadata = {
-  title: "Chat | Midday",
+  title: "Chat | Lujo",
 };
 
 type Props = {

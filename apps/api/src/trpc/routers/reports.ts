@@ -146,7 +146,7 @@ export const reportsRouter = createTRPCRouter({
 
       return {
         ...result,
-        shortUrl: `${process.env.MIDDAY_DASHBOARD_URL}/r/${result?.linkId}`,
+        shortUrl: `${process.env.LUJO_DASHBOARD_URL}/r/${result?.linkId}`,
       };
     }),
 

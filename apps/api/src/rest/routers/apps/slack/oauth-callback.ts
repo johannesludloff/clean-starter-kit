@@ -207,7 +207,7 @@ app.openapi(
 
         // Publish App Home for the installing user
         // This is non-blocking - OAuth flow continues even if it fails
-        // Use Slack user ID (not Midday user ID) for views.publish
+        // Use Slack user ID (not Lujo user ID) for views.publish
         const slackUserId = parsedJson.data.authed_user.id;
         const client = createSlackWebClient({ token: accessToken });
         publishAppHome({
@@ -228,7 +228,7 @@ app.openapi(
               error: errorMessage,
               stack: error instanceof Error ? error.stack : undefined,
               slackUserId,
-              middayUserId: parsedMetadata.data.userId,
+              lujoUserId: parsedMetadata.data.userId,
               teamId: parsedMetadata.data.teamId,
             });
           }
@@ -237,7 +237,7 @@ app.openapi(
 
         // Build redirect URL to dashboard
         const dashboardUrl =
-          process.env.MIDDAY_DASHBOARD_URL || "https://app.midday.ai";
+          process.env.LUJO_DASHBOARD_URL || "https://app.lujo.app";
 
         return c.redirect(`${dashboardUrl}/oauth-callback?status=success`, 302);
       }

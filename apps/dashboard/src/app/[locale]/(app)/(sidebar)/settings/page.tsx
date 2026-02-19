@@ -10,7 +10,7 @@ import { TeamIdSection } from "@/components/team-id-section";
 import { HydrateClient, prefetch, trpc } from "@/trpc/server";
 
 export const metadata: Metadata = {
-  title: "Team Settings | Midday",
+  title: "Team Settings | Lujo",
 };
 
 export default async function Account() {

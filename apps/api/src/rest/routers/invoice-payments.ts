@@ -100,8 +100,8 @@ app.openapi(
     });
 
     const _dashboardUrl =
-      process.env.MIDDAY_DASHBOARD_URL || "https://app.midday.ai";
-    const redirectUri = `${process.env.MIDDAY_API_URL || "https://api.midday.ai"}/invoice-payments/connect-stripe/callback`;
+      process.env.LUJO_DASHBOARD_URL || "https://app.lujo.app";
+    const redirectUri = `${process.env.LUJO_API_URL || "https://api.lujo.app"}/invoice-payments/connect-stripe/callback`;
 
     // Build Stripe Connect OAuth URL (Standard accounts)
     const params = new URLSearchParams({
@@ -183,7 +183,7 @@ app.openapi(
     const db = c.get("db");
     const { code, state, error, error_description } = c.req.valid("query");
     const dashboardUrl =
-      process.env.MIDDAY_DASHBOARD_URL || "https://app.midday.ai";
+      process.env.LUJO_DASHBOARD_URL || "https://app.lujo.app";
 
     // Handle OAuth errors
     if (error || !code) {

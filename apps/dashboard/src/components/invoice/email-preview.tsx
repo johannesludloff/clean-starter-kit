@@ -232,8 +232,8 @@ export function EmailPreview() {
             <div className="flex items-start gap-3">
               <div className="size-10 rounded-full bg-white dark:bg-[#1a1a1a] border border-border flex items-center justify-center flex-shrink-0">
                 <img
-                  src="https://midday.ai/email/logo.png"
-                  alt="Midday"
+                  src="https://lujo.app/email/logo.png"
+                  alt="Lujo"
                   className="size-6 dark:invert dark:brightness-100"
                 />
               </div>
@@ -262,8 +262,8 @@ export function EmailPreview() {
                   />
                 ) : (
                   <img
-                    src="https://midday.ai/email/logo.png"
-                    alt="Midday"
+                    src="https://lujo.app/email/logo.png"
+                    alt="Lujo"
                     className="h-10 w-10 dark:invert dark:brightness-100"
                   />
                 )}

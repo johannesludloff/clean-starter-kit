@@ -489,7 +489,7 @@ export function SDKs() {
 
 const midday = new Lujo({
   security: {
-    oauth2: process.env["MIDDAY_OAUTH2"] ?? "",
+    oauth2: process.env["LUJO_OAUTH2"] ?? "",
   },
 });
 
@@ -578,7 +578,7 @@ func main() {
 	ctx := context.Background()
 
 	s := middaygo.New(
-		middaygo.WithSecurity("MIDDAY_API_KEY"),
+		middaygo.WithSecurity("LUJO_API_KEY"),
 	)
 
 	res, err := s.Transactions.List(ctx, operations.ListTransactionsRequest{
@@ -658,7 +658,7 @@ use LujoLujo;
 use LujoLujoModelsOperations;
 
 $sdk = LujoLujo::builder()
-    ->setSecurity('MIDDAY_API_KEY')
+    ->setSecurity('LUJO_API_KEY')
     ->build();
 
 $request = new OperationsListTransactionsRequest(

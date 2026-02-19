@@ -22,7 +22,7 @@ interface Props {
 
 export const TrialExpiringEmail = ({ fullName = "" }: Props) => {
   const firstName = fullName ? fullName.split(" ").at(0) : "";
-  const text = `${firstName ? `Hi ${firstName}, ` : ""}Just a quick reminder—your Midday trial ends tomorrow. We hope you've had a great experience so far.`;
+  const text = `${firstName ? `Hi ${firstName}, ` : ""}Just a quick reminder—your Lujo trial ends tomorrow. We hope you've had a great experience so far.`;
   const themeClasses = getEmailThemeClasses();
   const lightStyles = getEmailInlineStyles("light");
 
@@ -45,7 +45,7 @@ export const TrialExpiringEmail = ({ fullName = "" }: Props) => {
             className={`text-[21px] font-normal text-center p-0 my-[30px] mx-0 ${themeClasses.heading}`}
             style={{ color: lightStyles.text.color }}
           >
-            Your Midday Trial is Expiring Soon
+            Your Lujo Trial is Expiring Soon
           </Heading>
 
           <br />
@@ -60,7 +60,7 @@ export const TrialExpiringEmail = ({ fullName = "" }: Props) => {
             className={themeClasses.text}
             style={{ color: lightStyles.text.color }}
           >
-            Just a quick reminder—your Midday trial ends tomorrow. We hope
+            Just a quick reminder—your Lujo trial ends tomorrow. We hope
             you've had a great experience so far.
           </Text>
           <Text
@@ -72,7 +72,7 @@ export const TrialExpiringEmail = ({ fullName = "" }: Props) => {
             claim it before your trial ends.
           </Text>
           <Section className="text-center mt-[50px] mb-[50px]">
-            <Button href="https://app.midday.ai/settings/billing">
+            <Button href="https://app.lujo.app/settings/billing">
               Claim your discount
             </Button>
           </Section>

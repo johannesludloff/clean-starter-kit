@@ -72,7 +72,7 @@ export const getAppByAppId = async (
 
 export type GetAppBySlackTeamIdParams = {
   slackTeamId: string;
-  channelId?: string; // Optional channel ID to help disambiguate if same Slack workspace connected to multiple Midday teams
+  channelId?: string; // Optional channel ID to help disambiguate if same Slack workspace connected to multiple Lujo teams
 };
 
 export const getAppBySlackTeamId = async (
@@ -124,11 +124,11 @@ export const getAppBySlackTeamId = async (
   // to use without a channelId. Return null to fail safely.
   if (allResults.length > 1) {
     console.error(
-      "SECURITY: Multiple Slack integrations found for Slack team. Cannot determine correct Midday team without channel_id. Returning null to prevent cross-tenant issues.",
+      "SECURITY: Multiple Slack integrations found for Slack team. Cannot determine correct Lujo team without channel_id. Returning null to prevent cross-tenant issues.",
       {
         slackTeamId,
         count: allResults.length,
-        middayTeamIds: allResults.map((r) => r.teamId),
+        lujoTeamIds: allResults.map((r) => r.teamId),
         channelIds: allResults.map(
           (r) =>
             // @ts-expect-error - config is JSONB

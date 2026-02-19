@@ -32,7 +32,7 @@ export const shortLinksRouter = createTRPCRouter({
 
       return {
         ...result,
-        shortUrl: `${process.env.MIDDAY_DASHBOARD_URL}/s/${result.shortId}`,
+        shortUrl: `${process.env.LUJO_DASHBOARD_URL}/s/${result.shortId}`,
       };
     }),
 
@@ -85,7 +85,7 @@ export const shortLinksRouter = createTRPCRouter({
 
       return {
         ...result,
-        shortUrl: `${process.env.MIDDAY_DASHBOARD_URL}/s/${result.shortId}`,
+        shortUrl: `${process.env.LUJO_DASHBOARD_URL}/s/${result.shortId}`,
         originalUrl: response.data.signedUrl,
       };
     }),

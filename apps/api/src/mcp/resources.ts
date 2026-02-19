@@ -10,7 +10,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
   if (hasScope(ctx, "teams.read")) {
     server.registerResource(
       "team",
-      "midday://team/info",
+      "lujo://team/info",
       {
         description:
           "Current team information including name, base currency, and settings",
@@ -21,7 +21,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
         return {
           contents: [
             {
-              uri: "midday://team/info",
+              uri: "lujo://team/info",
               mimeType: "application/json",
               text: JSON.stringify(team, null, 2),
             },
@@ -34,7 +34,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
   // Categories are static data, available to all authenticated users
   server.registerResource(
     "categories",
-    "midday://categories",
+    "lujo://categories",
     {
       description:
         "List of all transaction categories with their hierarchy, colors, and slugs",
@@ -44,7 +44,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
       return {
         contents: [
           {
-            uri: "midday://categories",
+            uri: "lujo://categories",
             mimeType: "application/json",
             text: JSON.stringify(CATEGORIES, null, 2),
           },
@@ -57,7 +57,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
   if (hasScope(ctx, "tags.read")) {
     server.registerResource(
       "tags",
-      "midday://tags",
+      "lujo://tags",
       {
         description: "List of all custom tags used for organizing data",
         mimeType: "application/json",
@@ -67,7 +67,7 @@ export function registerResources(server: McpServer, ctx: McpContext): void {
         return {
           contents: [
             {
-              uri: "midday://tags",
+              uri: "lujo://tags",
               mimeType: "application/json",
               text: JSON.stringify(tags, null, 2),
             },

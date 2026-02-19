@@ -867,13 +867,13 @@ export class XeroProvider extends BaseAccountingProvider {
     );
 
     // Build parts for the history note
-    const parts: string[] = ["Synced from Midday"];
+    const parts: string[] = ["Synced from Lujo"];
 
     if (noteContent) {
       parts.push(noteContent);
     }
 
-    // Only add history if there's meaningful content beyond "Synced from Midday"
+    // Only add history if there's meaningful content beyond "Synced from Lujo"
     if (parts.length === 1 && !noteContent) {
       return;
     }

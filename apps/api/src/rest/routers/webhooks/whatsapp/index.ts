@@ -468,7 +468,7 @@ async function handleButtonReply(
         suggestionId: suggestion.id,
         inboxId,
         transactionId,
-        userId: undefined, // WhatsApp interactions don't have Midday user ID mapping
+        userId: undefined, // WhatsApp interactions don't have Lujo user ID mapping
         teamId,
       });
 
@@ -485,7 +485,7 @@ async function handleButtonReply(
       await declineSuggestedMatch(db, {
         suggestionId: suggestion.id,
         inboxId,
-        userId: undefined, // WhatsApp interactions don't have Midday user ID mapping
+        userId: undefined, // WhatsApp interactions don't have Lujo user ID mapping
         teamId,
       });
 

@@ -26,7 +26,7 @@ export const FortnoxLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder 
 export const GmailLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
 export const GoogleDriveLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
 export const MakeMcpLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
-export const MiddayDesktopLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
+export const LujoDesktopLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
 export const N8nMcpLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
 export const OpenCodeMcpLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;
 export const OutlookLogo = (props: SVGProps<SVGSVGElement>) => <LogoPlaceholder {...props} />;

@@ -20,7 +20,7 @@ export const apps: App[] = [
   { id: "raycast", name: "Raycast", active: true, category: "apps", short_description: "Track time from Raycast.", description: null },
   { id: "stripe-payments", name: "Stripe Payments", active: true, category: "payments", short_description: "Accept card payments on invoices.", description: null },
   { id: "stripe", name: "Stripe", active: true, category: "payments", short_description: "Sync Stripe revenue automatically.", description: null },
-  { id: "midday-desktop", name: "Midday Desktop", active: true, category: "apps", short_description: "Native Mac app for your finances.", description: null, installUrl: "https://midday.ai/download" },
+  { id: "midday-desktop", name: "Lujo Desktop", active: true, category: "apps", short_description: "Native Mac app for your finances.", description: null, installUrl: "https://midday.ai/download" },
   { id: "google-drive", name: "Google Drive", active: true, category: "storage", short_description: "Sync documents to Google Drive.", description: null },
   { id: "dropbox", name: "Dropbox", active: true, category: "storage", short_description: "Sync documents to Dropbox.", description: null },
   { id: "polar", name: "Polar", active: true, category: "payments", short_description: "Sync subscription payments from Polar.", description: null },

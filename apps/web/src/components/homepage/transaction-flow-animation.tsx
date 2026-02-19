@@ -423,7 +423,7 @@ export function TransactionFlowAnimation({
           </svg>
         </div>
 
-        {/* Transaction list full width below - Midday table style */}
+        {/* Transaction list full width below - Lujo table style */}
         <div className="flex-1 min-h-0 overflow-hidden border border-border bg-background">
           <table
             className="w-full border-collapse"

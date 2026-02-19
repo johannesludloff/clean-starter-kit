@@ -11,7 +11,7 @@ export function TimeSavingsSection() {
             Less admin. More focus.
           </h2>
           <p className="hidden sm:block font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
-            Midday removes manual financial work so you can spend time on what
+            Lujo removes manual financial work so you can spend time on what
             actually matters.
           </p>
         </div>
@@ -107,7 +107,7 @@ export function TimeSavingsSection() {
             </article>
 
             <a
-              href="https://app.midday.ai/"
+              href="https://app.lujo.app/"
               className="relative overflow-hidden bg-secondary border border-border p-4 sm:p-5 md:p-5 lg:p-6 transition-all duration-200 group hidden xl:block xl:col-span-7 hover:border-muted-foreground touch-manipulation"
               style={{ WebkitTapHighlightColor: "transparent" }}
             >
@@ -134,7 +134,7 @@ export function TimeSavingsSection() {
                       Manual financial work caused by disconnected tools.
                     </span>
                     <span className="hidden group-hover:inline transition-opacity duration-200">
-                      Midday handles the financial busywork so you can focus on
+                      Lujo handles the financial busywork so you can focus on
                       running the business.
                     </span>
                   </p>
@@ -150,7 +150,7 @@ export function TimeSavingsSection() {
 
           <div className="grid grid-cols-1 gap-3 sm:gap-4 xl:hidden">
             <a
-              href="https://app.midday.ai/"
+              href="https://app.lujo.app/"
               className="relative overflow-hidden bg-secondary border border-border p-4 sm:p-5 md:p-5 lg:p-6 transition-all duration-200 hover:border-muted-foreground touch-manipulation"
               style={{ WebkitTapHighlightColor: "transparent" }}
             >

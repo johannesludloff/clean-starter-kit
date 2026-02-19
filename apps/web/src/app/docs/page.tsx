@@ -5,7 +5,7 @@ import { DocsHomeHero } from "@/components/docs/docs-home-hero";
 
 const title = "Documentation";
 const description =
-  "Learn how to use Midday to run your business finances. Get answers about invoicing, banking, time tracking, reports, and more.";
+  "Learn how to use Lujo to run your business finances. Get answers about invoicing, banking, time tracking, reports, and more.";
 
 export const metadata: Metadata = {
   title,
@@ -30,7 +30,7 @@ const popularGuides = [
   {
     title: "Getting Started",
     href: "/docs/introduction",
-    description: "What is Midday and how it helps you",
+    description: "What is Lujo and how it helps you",
   },
   {
     title: "Quick Start",

@@ -85,7 +85,7 @@ export function PreAccounting() {
                 Pre-accounting, handled.
               </h1>
               <p className="text-muted-foreground text-base leading-normal font-sans text-center mx-auto">
-                Midday collects, matches, and prepares your financial data so
+                Lujo collects, matches, and prepares your financial data so
                 your books are always ready before they reach an accountant.
               </p>
             </div>
@@ -97,7 +97,7 @@ export function PreAccounting() {
                   asChild
                   className="w-full sm:w-auto h-11 px-6 text-sm font-sans"
                 >
-                  <a href="https://app.midday.ai/">Start free trial</a>
+                  <a href="https://app.lujo.app/">Start free trial</a>
                 </Button>
                 <Button
                   variant="outline"
@@ -158,7 +158,7 @@ export function PreAccounting() {
                 Pre-accounting, handled.
               </h1>
               <p className="text-muted-foreground text-sm xl:text-base leading-normal max-w-xl mx-auto font-sans text-center">
-                Midday collects, matches, and prepares your financial data so
+                Lujo collects, matches, and prepares your financial data so
                 your books are always ready before they reach an accountant.
               </p>
             </div>
@@ -166,7 +166,7 @@ export function PreAccounting() {
             {/* CTA Buttons */}
             <div className="flex gap-6 justify-center">
               <Button asChild className="h-11 px-6 text-sm font-sans">
-                <a href="https://app.midday.ai/">Start free trial</a>
+                <a href="https://app.lujo.app/">Start free trial</a>
               </Button>
               <Button
                 variant="outline"
@@ -363,7 +363,7 @@ export function PreAccounting() {
               Accountant-ready, without the back and forth
             </h2>
             <p className="font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
-              Midday prepares clean, structured records so exporting or syncing
+              Lujo prepares clean, structured records so exporting or syncing
               to your accounting system takes minutes, not days.
             </p>
           </div>

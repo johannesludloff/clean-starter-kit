@@ -4,7 +4,7 @@ import { Pricing } from "@/components/pricing";
 
 const title = "Pricing";
 const description =
-  "Simple, transparent pricing for Midday. Start free and upgrade as you grow. Invoicing, expense tracking, and financial tools for small business owners.";
+  "Simple, transparent pricing for Lujo. Start free and upgrade as you grow. Invoicing, expense tracking, and financial tools for small business owners.";
 
 export const metadata: Metadata = {
   title,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Midday",
+  name: "Lujo",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web, macOS",
   description:

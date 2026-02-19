@@ -53,7 +53,7 @@ export function MCPClaude() {
 
   const cliCommand = useMemo(() => {
     const key = apiKey || "YOUR_API_KEY";
-    return `claude mcp add --transport http midday https://api.midday.ai/mcp --header "Authorization: Bearer ${key}"`;
+    return `claude mcp add --transport http midday https://api.lujo.app/mcp --header "Authorization: Bearer ${key}"`;
   }, [apiKey]);
 
   const desktopConfig = useMemo(() => {
@@ -66,7 +66,7 @@ export function MCPClaude() {
             args: [
               "-y",
               "mcp-remote@latest",
-              "https://api.midday.ai/mcp",
+              "https://api.lujo.app/mcp",
               "--header",
               // biome-ignore lint/suspicious/noTemplateCurlyInString: Intentional shell variable reference in MCP config
               "Authorization:${AUTH_HEADER}",
@@ -118,7 +118,7 @@ export function MCPClaude() {
                 Conversations with real numbers
               </h2>
               <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                Claude can pull live data from your Midday account to answer
+                Claude can pull live data from your Lujo account to answer
                 questions accurately. Works with both Claude Code and Claude
                 Desktop.
               </p>
@@ -144,7 +144,7 @@ export function MCPClaude() {
                 <p className="font-sans text-xs text-muted-foreground">
                   Don't have an API key?{" "}
                   <Link
-                    href="https://app.midday.ai/settings/developer"
+                    href="https://app.lujo.app/settings/developer"
                     className="underline hover:text-foreground"
                   >
                     Create one in Settings → Developer
@@ -231,7 +231,7 @@ export function MCPClaude() {
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
                     Get an API key from{" "}
                     <Link
-                      href="https://app.midday.ai/settings/developer"
+                      href="https://app.lujo.app/settings/developer"
                       className="underline hover:text-foreground"
                     >
                       Settings → Developer
@@ -255,7 +255,7 @@ export function MCPClaude() {
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
                     {activeTab === "code"
                       ? "Use @midday in Claude Code to access your data"
-                      : "Restart Claude Desktop and use Midday tools"}
+                      : "Restart Claude Desktop and use Lujo tools"}
                   </span>
                 </li>
               </ol>

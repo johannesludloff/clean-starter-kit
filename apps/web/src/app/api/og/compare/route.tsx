@@ -1,3 +1,4 @@
+import { appConfig } from "@/config/app";
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
@@ -8,22 +9,31 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const competitorName = searchParams.get("name");
 
-  const hedvigSansFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
-  ).then((res) => res.arrayBuffer());
+  // Load font — use CDN if configured, otherwise fall back to Google Fonts
+  const fontUrl = appConfig.cdn
+    ? `${appConfig.cdn}/fonts/HedvigSans/HedvigLettersSans-Regular.ttf`
+    : "https://fonts.gstatic.com/s/hedvigletterssans/v4/9oRONYoBnWIIk-GnDSK_gEclFkGeVbFX.woff2";
+
+  let fontData: ArrayBuffer | null = null;
+  try {
+    const res = await fetch(fontUrl);
+    if (res.ok) fontData = await res.arrayBuffer();
+  } catch {
+    // Font load failed — will fall back to system font
+  }
 
   const title = competitorName
     ? `${competitorName} Alternative`
     : "Compare Alternatives";
 
   const subtitle = competitorName
-    ? `See why founders are switching from ${competitorName} to Midday`
+    ? `See why founders are switching from ${competitorName} to ${appConfig.name}`
     : "Built for founders, not accountants";
 
   return new ImageResponse(
     <div
       tw="h-full w-full flex flex-col bg-[#0C0C0C] p-16"
-      style={{ fontFamily: "hedvig-sans" }}
+      style={{ fontFamily: fontData ? "hedvig-sans" : "system-ui" }}
     >
       {/* Header with logo */}
       <div tw="flex items-center mb-12">
@@ -44,17 +54,14 @@ export async function GET(request: NextRequest) {
             <span tw="text-[#606060] text-lg mb-1">For</span>
             <span tw="text-white text-2xl">Founders</span>
           </div>
-
           <div tw="flex flex-col mr-16">
             <span tw="text-[#606060] text-lg mb-1">Interface</span>
             <span tw="text-white text-2xl">Modern</span>
           </div>
-
           <div tw="flex flex-col mr-16">
             <span tw="text-[#606060] text-lg mb-1">AI</span>
             <span tw="text-white text-2xl">Built-in</span>
           </div>
-
           <div tw="flex flex-col">
             <span tw="text-[#606060] text-lg mb-1">Trial</span>
             <span tw="text-white text-2xl">14 days free</span>
@@ -65,14 +72,16 @@ export async function GET(request: NextRequest) {
     {
       width: 1200,
       height: 630,
-      fonts: [
-        {
-          name: "hedvig-sans",
-          data: await hedvigSansFont,
-          style: "normal",
-          weight: 400,
-        },
-      ],
+      fonts: fontData
+        ? [
+            {
+              name: "hedvig-sans",
+              data: fontData,
+              style: "normal",
+              weight: 400,
+            },
+          ]
+        : [],
     },
   );
 }

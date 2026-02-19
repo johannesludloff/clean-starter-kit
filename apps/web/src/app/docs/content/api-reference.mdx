@@ -1,17 +1,17 @@
 ---
 title: API Reference
-description: Access your Midday data programmatically through the REST API.
+description: Access your Lujo data programmatically through the REST API.
 section: developer
 order: 1
 ---
 
-The Midday API lets you access your financial data programmatically. Build custom integrations, automate workflows, or connect Midday to your own tools.
+The Lujo API lets you access your financial data programmatically. Build custom integrations, automate workflows, or connect Lujo to your own tools.
 
 ## Full API documentation
 
 For complete API documentation including all endpoints, parameters, and examples:
 
-**[api.midday.ai](https://api.midday.ai)**
+**[api.lujo.app](https://api.lujo.app)**
 
 ## Overview
 
@@ -27,13 +27,13 @@ The API provides access to:
 
 ## Authentication
 
-The Midday API supports two authentication methods:
+The Lujo API supports two authentication methods:
 
 ### API Keys (for your own data)
 
-For accessing your own Midday data in scripts, automations, or personal tools.
+For accessing your own Lujo data in scripts, automations, or personal tools.
 
-1. Go to [Settings → Developer](https://app.midday.ai/settings/developer)
+1. Go to [Settings → Developer](https://app.lujo.app/settings/developer)
 2. Click **Create API key**
 3. Give it a descriptive name
 4. Copy the key immediately (you won't see it again)
@@ -46,9 +46,9 @@ Authorization: Bearer your-api-key-here
 
 ### OAuth 2.0 (for user-facing apps)
 
-For building apps that access other users' Midday data with their permission.
+For building apps that access other users' Lujo data with their permission.
 
-1. Create an OAuth application in [Settings → Developer](https://app.midday.ai/settings/developer)
+1. Create an OAuth application in [Settings → Developer](https://app.lujo.app/settings/developer)
 2. Implement the OAuth authorization flow
 3. Exchange authorization codes for access tokens
 4. Use access tokens in API requests
@@ -60,7 +60,7 @@ For building apps that access other users' Midday data with their permission.
 All API endpoints use:
 
 ```
-https://api.midday.ai/v1
+https://api.lujo.app/v1
 ```
 
 ## Rate limits
@@ -74,7 +74,7 @@ If you exceed rate limits, you'll receive a `429 Too Many Requests` response. Wa
 
 ### NPM package
 
-Install the Midday SDK:
+Install the Lujo SDK:
 
 ```bash
 npm install @midday-ai/sdk
@@ -92,4 +92,4 @@ npx @midday-ai/mcp
 
 ## Support
 
-- **Email**: [support@midday.ai](mailto:support@midday.ai)
+- **Email**: [support@lujo.app](mailto:support@lujo.app)

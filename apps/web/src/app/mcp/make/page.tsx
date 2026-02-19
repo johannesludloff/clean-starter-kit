@@ -4,7 +4,7 @@ import { MCPMake } from "@/components/mcp-make";
 
 const title = "Make MCP Integration";
 const description =
-  "Connect Midday to Make scenarios via MCP. Build visual automations with your financial data and connect to 1,500+ apps.";
+  "Connect Lujo to Make scenarios via MCP. Build visual automations with your financial data and connect to 1,500+ apps.";
 
 export const metadata: Metadata = {
   title,

@@ -3,8 +3,9 @@ import { categories, getAllSlugs } from "@/data/apps";
 import { getAllCompetitorSlugs } from "@/data/competitors";
 import { getBlogPosts } from "@/lib/blog";
 import { getAllDocSlugs } from "@/lib/docs";
+import { baseUrl } from "@/config/app";
 
-export const baseUrl = "https://midday.ai";
+export { baseUrl };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date().toISOString().split("T")[0];

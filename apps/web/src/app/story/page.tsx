@@ -4,7 +4,7 @@ import { baseUrl } from "@/app/sitemap";
 
 const title = "Story";
 const description =
-  "Why we built Midday. Learn about our mission to help founders and small teams stay on top of their business finances without the manual work.";
+  "Why we built Lujo. Learn about our mission to help founders and small teams stay on top of their business finances without the manual work.";
 
 export const metadata: Metadata = {
   title,
@@ -34,7 +34,7 @@ export default function StoryPage() {
             {/* Title */}
             <div className="space-y-4 text-center">
               <h1 className="font-serif text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl 3xl:text-4xl leading-tight lg:leading-tight xl:leading-[1.3] text-foreground">
-                Why we started Midday
+                Why we started Lujo
               </h1>
             </div>
 
@@ -81,7 +81,7 @@ export default function StoryPage() {
                   works for you.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Midday is built around the idea that your finances should stay
+                  Lujo is built around the idea that your finances should stay
                   reconciled, explained, and monitored as your business changes
                   — without you having to constantly check dashboards or chase
                   updates. Time, invoices, receipts, transactions, and documents
@@ -89,14 +89,14 @@ export default function StoryPage() {
                   reflect what's actually happening.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Instead of pulling information out of the system, Midday
+                  Instead of pulling information out of the system, Lujo
                   pushes the right information to you. Summaries, notifications,
                   and clear signals help you understand what's changed, what
                   needs attention, and what's on track. That way, you stay
                   informed without living inside financial software.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Midday doesn't replace your accountant. It sits in between,
+                  Lujo doesn't replace your accountant. It sits in between,
                   keeping everything organized, connected, and ready, so
                   conversations are easier and decisions are based on up-to-date
                   information.
@@ -114,7 +114,7 @@ export default function StoryPage() {
                   What we're focused on
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Midday is built for founders and small teams who want to feel
+                  Lujo is built for founders and small teams who want to feel
                   on top of their business without spending their time managing
                   financial admin.
                 </p>
@@ -131,7 +131,7 @@ export default function StoryPage() {
                   </li>
                 </ul>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Our goal is simple: when you use Midday, you shouldn't have to
+                  Our goal is simple: when you use Lujo, you shouldn't have to
                   wonder how your business is doing.
                 </p>
                 <p className="text-muted-foreground leading-relaxed font-medium">
@@ -155,7 +155,7 @@ export default function StoryPage() {
                   Pontus & Viktor
                 </p>
                 <p className="font-sans text-sm text-muted-foreground">
-                  Founders, Midday
+                  Founders, Lujo
                 </p>
               </div>
             </div>

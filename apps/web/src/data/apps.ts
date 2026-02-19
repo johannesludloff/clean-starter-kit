@@ -117,7 +117,7 @@ const appExtensions: Record<
       "Manage invoices",
       "Native Mac experience",
     ],
-    installUrl: "https://midday.ai/download",
+    installUrl: "https://lujo.app/download",
   },
   "google-drive": {
     slug: "google-drive",
@@ -172,7 +172,7 @@ const appExtensions: Record<
       "One-click install via deeplink",
       "27 tools for financial data",
     ],
-    installUrl: "https://midday.ai/mcp/cursor",
+    installUrl: "https://lujo.app/mcp/cursor",
   },
   "claude-mcp": {
     slug: "claude-mcp",
@@ -182,7 +182,7 @@ const appExtensions: Record<
       "Query invoices and reports",
       "Granular permission controls",
     ],
-    installUrl: "https://midday.ai/mcp/claude",
+    installUrl: "https://lujo.app/mcp/claude",
   },
   "perplexity-mcp": {
     slug: "perplexity-mcp",
@@ -192,7 +192,7 @@ const appExtensions: Record<
       "Query transactions and reports",
       "Natural language questions",
     ],
-    installUrl: "https://midday.ai/mcp/perplexity",
+    installUrl: "https://lujo.app/mcp/perplexity",
   },
   "raycast-mcp": {
     slug: "raycast-mcp",
@@ -202,7 +202,7 @@ const appExtensions: Record<
       "One-click install via deeplink",
       "@-mention in Raycast AI",
     ],
-    installUrl: "https://midday.ai/mcp/raycast",
+    installUrl: "https://lujo.app/mcp/raycast",
   },
   "chatgpt-mcp": {
     slug: "chatgpt-mcp",
@@ -212,7 +212,7 @@ const appExtensions: Record<
       "Programmatic data access",
       "TypeScript support",
     ],
-    installUrl: "https://midday.ai/mcp/chatgpt",
+    installUrl: "https://lujo.app/mcp/chatgpt",
   },
   "opencode-mcp": {
     slug: "opencode-mcp",
@@ -222,7 +222,7 @@ const appExtensions: Record<
       "Query finances from any editor",
       "Open source AI coding agent",
     ],
-    installUrl: "https://midday.ai/mcp/opencode",
+    installUrl: "https://lujo.app/mcp/opencode",
   },
   "zapier-mcp": {
     slug: "zapier-mcp",
@@ -232,7 +232,7 @@ const appExtensions: Record<
       "No-code workflow builder",
       "Sync data across tools",
     ],
-    installUrl: "https://midday.ai/mcp/zapier",
+    installUrl: "https://lujo.app/mcp/zapier",
   },
   "copilot-mcp": {
     slug: "copilot-mcp",
@@ -242,17 +242,17 @@ const appExtensions: Record<
       "Build custom Copilot agents",
       "Enterprise-ready integration",
     ],
-    installUrl: "https://midday.ai/mcp/copilot",
+    installUrl: "https://lujo.app/mcp/copilot",
   },
   "n8n-mcp": {
     slug: "n8n-mcp",
     features: [
       "Build automated financial workflows",
-      "AI agents with Midday tools",
+      "AI agents with Lujo tools",
       "Connect to 400+ apps via n8n",
       "MCP Client & Server support",
     ],
-    installUrl: "https://midday.ai/mcp/n8n",
+    installUrl: "https://lujo.app/mcp/n8n",
   },
   "make-mcp": {
     slug: "make-mcp",
@@ -262,7 +262,7 @@ const appExtensions: Record<
       "MCP Client module support",
       "No-code workflow automation",
     ],
-    installUrl: "https://midday.ai/mcp/make",
+    installUrl: "https://lujo.app/mcp/make",
   },
 };
 

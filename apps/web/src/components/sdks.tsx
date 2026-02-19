@@ -292,10 +292,10 @@ export function SDKs() {
             {/* Title and Description */}
             <div className="space-y-4 text-center max-w-xl w-full">
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight text-foreground">
-                Build with Midday
+                Build with Lujo
               </h1>
               <p className="text-muted-foreground text-base leading-normal font-sans text-center mx-auto">
-                Use Midday's SDKs to integrate financial data, insights, and
+                Use Lujo's SDKs to integrate financial data, insights, and
                 workflows into your product with just a few lines of code.
               </p>
             </div>
@@ -306,14 +306,14 @@ export function SDKs() {
                 asChild
                 className="w-full sm:w-auto h-11 px-6 text-sm font-sans"
               >
-                <Link href="https://app.midday.ai">Get started</Link>
+                <Link href="https://app.lujo.app">Get started</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 className="w-full sm:w-auto h-11 px-6 text-sm font-sans bg-background border-border hover:bg-accent"
               >
-                <Link href="https://api.midday.ai">API documentation</Link>
+                <Link href="https://api.lujo.app">API documentation</Link>
               </Button>
             </div>
           </div>
@@ -371,10 +371,10 @@ export function SDKs() {
             {/* Title and Description */}
             <div className="text-center space-y-4 w-full">
               <h1 className="font-serif text-6xl xl:text-7xl 2xl:text-8xl leading-tight text-foreground">
-                Build with Midday
+                Build with Lujo
               </h1>
               <p className="text-muted-foreground text-sm xl:text-base leading-normal max-w-xl mx-auto font-sans text-center">
-                Use Midday's SDKs to integrate financial data, insights, and
+                Use Lujo's SDKs to integrate financial data, insights, and
                 workflows into your product with just a few lines of code.
               </p>
             </div>
@@ -382,14 +382,14 @@ export function SDKs() {
             {/* CTA Buttons */}
             <div className="flex gap-6 justify-center mt-8">
               <Button asChild className="h-11 px-6 text-sm font-sans">
-                <Link href="https://app.midday.ai">Get started</Link>
+                <Link href="https://app.lujo.app">Get started</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 className="h-11 px-6 text-sm font-sans bg-background border-border hover:bg-accent"
               >
-                <Link href="https://api.midday.ai">API documentation</Link>
+                <Link href="https://api.lujo.app">API documentation</Link>
               </Button>
             </div>
           </div>
@@ -455,7 +455,7 @@ export function SDKs() {
                   TypeScript SDK
                 </h3>
                 <p className="font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
-                  A fully typed SDK for interacting with Midday's APIs, designed
+                  A fully typed SDK for interacting with Lujo's APIs, designed
                   for modern web and backend applications.
                 </p>
               </div>
@@ -485,9 +485,9 @@ export function SDKs() {
                       Example:
                     </p>
                     <CodeBlock
-                      code={`import { Midday } from "@midday-ai/sdk";
+                      code={`import { Lujo } from "@midday-ai/sdk";
 
-const midday = new Midday({
+const midday = new Lujo({
   security: {
     oauth2: process.env["MIDDAY_OAUTH2"] ?? "",
   },
@@ -545,7 +545,7 @@ run();`}
                 </h3>
                 <p className="font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
                   A lightweight Go SDK for building server-side applications
-                  with Midday's APIs.
+                  with Lujo's APIs.
                 </p>
               </div>
 
@@ -627,7 +627,7 @@ func main() {
                   PHP SDK
                 </h3>
                 <p className="font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
-                  A PHP SDK for integrating Midday's APIs into your PHP
+                  A PHP SDK for integrating Lujo's APIs into your PHP
                   applications.
                 </p>
               </div>
@@ -654,10 +654,10 @@ declare(strict_types=1);
 
 require 'vendor/autoload.php';
 
-use MiddayMidday;
-use MiddayMiddayModelsOperations;
+use LujoLujo;
+use LujoLujoModelsOperations;
 
-$sdk = MiddayMidday::builder()
+$sdk = LujoLujo::builder()
     ->setSecurity('MIDDAY_API_KEY')
     ->build();
 
@@ -715,7 +715,7 @@ if ($response->object !== null) {
               Build real financial workflows
             </h2>
             <p className="hidden sm:block font-sans text-base text-muted-foreground leading-normal max-w-2xl mx-auto">
-              Use Midday SDKs to integrate financial data, insights, and
+              Use Lujo SDKs to integrate financial data, insights, and
               workflows into your product.
             </p>
           </div>
@@ -850,7 +850,7 @@ if ($response->object !== null) {
                   Quickstart
                 </h3>
                 <p className="font-sans text-sm text-muted-foreground">
-                  Get started with Midday SDKs in minutes.
+                  Get started with Lujo SDKs in minutes.
                 </p>
               </Link>
               <Link
@@ -874,7 +874,7 @@ if ($response->object !== null) {
                 </p>
               </Link>
               <Link
-                href="https://api.midday.ai"
+                href="https://api.lujo.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-secondary border border-border p-6 hover:border-foreground/20 transition-colors group flex flex-col items-center text-center"

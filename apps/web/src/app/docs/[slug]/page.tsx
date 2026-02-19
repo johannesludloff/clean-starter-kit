@@ -33,7 +33,7 @@ export async function generateMetadata({
       title: doc.metadata.title,
       description: doc.metadata.description,
       type: "article",
-      url: `https://midday.ai/docs/${slug}`,
+      url: `https://lujo.app/docs/${slug}`,
     },
     twitter: {
       card: "summary_large_image",

@@ -46,7 +46,7 @@ function CodeBlock({ code }: { code: string }) {
 
 // Pre-computed deeplink with placeholder token
 const cursorConfig = {
-  url: "https://api.midday.ai/mcp",
+  url: "https://api.lujo.app/mcp",
   headers: {
     Authorization: "Bearer YOUR_API_KEY",
   },
@@ -57,7 +57,7 @@ const manualConfig = JSON.stringify(
   {
     mcpServers: {
       midday: {
-        url: "https://api.midday.ai/mcp",
+        url: "https://api.lujo.app/mcp",
         headers: {
           Authorization: "Bearer YOUR_API_KEY",
         },
@@ -142,14 +142,14 @@ export function MCPCursor() {
                 {/* biome-ignore lint/performance/noImgElement: External deeplink badge images cannot use next/image */}
                 <img
                   src="https://cursor.com/deeplink/mcp-install-dark.png"
-                  alt="Add Midday MCP server to Cursor"
+                  alt="Add Lujo MCP server to Cursor"
                   height={32}
                   className="h-8 dark:hidden"
                 />
                 {/* biome-ignore lint/performance/noImgElement: External deeplink badge images cannot use next/image */}
                 <img
                   src="https://cursor.com/deeplink/mcp-install-light.png"
-                  alt="Add Midday MCP server to Cursor"
+                  alt="Add Lujo MCP server to Cursor"
                   height={32}
                   className="h-8 hidden dark:block"
                 />
@@ -159,7 +159,7 @@ export function MCPCursor() {
                 <code className="font-mono">YOUR_API_KEY</code> in{" "}
                 <code className="font-mono">~/.cursor/mcp.json</code> with your{" "}
                 <Link
-                  href="https://app.midday.ai/settings/developer"
+                  href="https://app.lujo.app/settings/developer"
                   className="underline hover:text-foreground"
                 >
                   API key
@@ -203,7 +203,7 @@ export function MCPCursor() {
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
                     Get an API key from{" "}
                     <Link
-                      href="https://app.midday.ai/settings/developer"
+                      href="https://app.lujo.app/settings/developer"
                       className="underline hover:text-foreground"
                     >
                       Settings → Developer
@@ -224,7 +224,7 @@ export function MCPCursor() {
                     4
                   </span>
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
-                    Restart Cursor and @-mention Midday in chat
+                    Restart Cursor and @-mention Lujo in chat
                   </span>
                 </li>
               </ol>

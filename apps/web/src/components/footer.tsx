@@ -152,7 +152,7 @@ export function Footer() {
                 {[
                   { href: "/docs", label: "Documentation", external: false },
                   {
-                    href: "https://api.midday.ai",
+                    href: "https://api.lujo.app",
                     label: "API",
                     external: true,
                   },
@@ -288,7 +288,7 @@ export function Footer() {
             </div>
           </Link>
           <p className="font-sans text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Midday Labs AB. All rights reserved.
+            © {new Date().getFullYear()} Lujo Labs AB. All rights reserved.
           </p>
         </div>
       </div>

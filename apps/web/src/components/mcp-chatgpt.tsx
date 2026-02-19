@@ -61,7 +61,7 @@ export function MCPChatGPT() {
             args: [
               "-y",
               "mcp-remote@latest",
-              "https://api.midday.ai/mcp",
+              "https://api.lujo.app/mcp",
               "--header",
               // biome-ignore lint/suspicious/noTemplateCurlyInString: Intentional shell variable reference in MCP config
               "Authorization:${AUTH_HEADER}",
@@ -83,7 +83,7 @@ export function MCPChatGPT() {
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const transport = new StreamableHTTPClientTransport({
-  url: "https://api.midday.ai/mcp",
+  url: "https://api.lujo.app/mcp",
   headers: {
     Authorization: "Bearer ${key}",
   },
@@ -151,7 +151,7 @@ await client.close();`;
                 Financial data in ChatGPT
               </h2>
               <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                ChatGPT supports MCP servers in developer mode. Connect Midday
+                ChatGPT supports MCP servers in developer mode. Connect Lujo
                 to query your transactions, invoices, and reports directly in
                 ChatGPT conversations.
               </p>
@@ -192,7 +192,7 @@ await client.close();`;
                 <p className="font-sans text-xs text-muted-foreground">
                   Don't have an API key?{" "}
                   <Link
-                    href="https://app.midday.ai/settings/developer"
+                    href="https://app.lujo.app/settings/developer"
                     className="underline hover:text-foreground"
                   >
                     Create one in Settings → Developer
@@ -283,7 +283,7 @@ await client.close();`;
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
                     Get an API key from{" "}
                     <Link
-                      href="https://app.midday.ai/settings/developer"
+                      href="https://app.lujo.app/settings/developer"
                       className="underline hover:text-foreground"
                     >
                       Settings → Developer

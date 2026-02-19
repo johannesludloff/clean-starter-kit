@@ -86,7 +86,7 @@ const features = [
   {
     title: "Understand what's happening",
     subtitle:
-      "Midday explains changes in cash, revenue, and spending as they happen.",
+      "Lujo explains changes in cash, revenue, and spending as they happen.",
     mobileSubtitle: "See what's changing and why.",
     illustration: "animation",
   },
@@ -104,64 +104,64 @@ const videos = [
     id: "overview",
     title: "Overview",
     subtitle:
-      "See how Midday helps you run your business finances without manual work.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4",
+      "See how Lujo helps you run your business finances without manual work.",
+    url: "https://cdn.lujo.app/videos/login-video.mp4",
   },
   {
     id: "assistant",
     title: "Assistant",
     subtitle:
       "Ask questions and get clear answers based on your business data, including revenue and expenses.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "insights",
     title: "Insights",
     subtitle:
       "Understand how your business evolves with live widgets and summaries highlighting what's changing.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "transactions",
     title: "Transactions",
     subtitle:
       "Every payment is automatically collected, categorized, and kept in one place so nothing gets lost.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "inbox",
     title: "Inbox",
     subtitle:
       "Receipts and invoices are pulled from email and payments, then matched to transactions automatically.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "time-tracking",
     title: "Time tracking",
     subtitle:
       "Track time across projects and customers, then turn hours into accurate invoices so nothing is missed.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "invoicing",
     title: "Invoicing",
     subtitle:
       "Create invoices, send to customers, and track payments flowing into your financial overview.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "customers",
     title: "Customers",
     subtitle:
       "See revenue, profitability, and activity per customer in one place without switching between tools.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
   {
     id: "files",
     title: "Files",
     subtitle:
       "Smart storage that automatically organizes and connects files to transactions, invoices, and customers.",
-    url: "https://cdn.midday.ai/videos/login-video.mp4", // Replace with actual video URL
+    url: "https://cdn.lujo.app/videos/login-video.mp4", // Replace with actual video URL
   },
 ];
 
@@ -321,7 +321,7 @@ export function StartPage() {
                     asChild
                     className="w-full lg:w-auto btn-inverse h-11 px-5 lg:px-4 transition-colors"
                   >
-                    <a href="https://app.midday.ai/">
+                    <a href="https://app.lujo.app/">
                       <span className="text-inherit text-sm">
                         Set up your business
                       </span>
@@ -359,8 +359,8 @@ export function StartPage() {
                 }}
               >
                 <Image
-                  src="https://cdn.midday.ai/video-poster-v2.jpg"
-                  alt="Midday dashboard preview"
+                  src="https://cdn.lujo.app/video-poster-v2.jpg"
+                  alt="Lujo dashboard preview"
                   fill
                   fetchPriority="high"
                   quality={50}
@@ -387,7 +387,7 @@ export function StartPage() {
                 preload="none"
               >
                 <source
-                  src="https://cdn.midday.ai/videos/login-video.mp4"
+                  src="https://cdn.lujo.app/videos/login-video.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -850,7 +850,7 @@ export function StartPage() {
       </div>
 
       {/* Weekly Audio Section */}
-      <WeeklyAudioSection audioUrl="https://cdn.midday.ai/weekly-speech.mp3" />
+      <WeeklyAudioSection audioUrl="https://cdn.lujo.app/weekly-speech.mp3" />
 
       {/* Divider */}
       <div className="max-w-[1400px] mx-auto">

@@ -1,19 +1,19 @@
 ---
 title: Assistant and MCP Integration
-description: Use the Midday assistant in your own tools via MCP.
+description: Use the Lujo assistant in your own tools via MCP.
 section: assistant
 order: 2
 ---
 
-The Midday assistant is available through the Model Context Protocol (MCP), letting you query your financial data from AI tools like Claude Desktop, Cursor, ChatGPT, and Raycast.
+The Lujo assistant is available through the Model Context Protocol (MCP), letting you query your financial data from AI tools like Claude Desktop, Cursor, ChatGPT, and Raycast.
 
 ## What is MCP?
 
-Model Context Protocol (MCP) is an open standard for connecting AI assistants to external data sources. Instead of copying and pasting data, MCP lets AI tools query your Midday data directly and securely.
+Model Context Protocol (MCP) is an open standard for connecting AI assistants to external data sources. Instead of copying and pasting data, MCP lets AI tools query your Lujo data directly and securely.
 
 ## Supported tools
 
-Midday MCP works with:
+Lujo MCP works with:
 
 - **Claude Desktop** - Anthropic's desktop app
 - **Cursor** - AI-powered code editor
@@ -25,7 +25,7 @@ Midday MCP works with:
 
 ### Step 1: Get your API key
 
-1. Go to [Settings → Developer](https://app.midday.ai/settings/developer)
+1. Go to [Settings → Developer](https://app.lujo.app/settings/developer)
 2. Click **Create API key**
 3. Give it a descriptive name (e.g., "Claude Desktop")
 4. Copy the key immediately (you won't see it again)
@@ -38,14 +38,14 @@ Choose your tool below for specific setup instructions.
 
 ## Claude Desktop setup
 
-Add Midday to your Claude Desktop configuration.
+Add Lujo to your Claude Desktop configuration.
 
 ### Find your config file
 
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
-### Add Midday configuration
+### Add Lujo configuration
 
 Add or update the `mcpServers` section:
 
@@ -65,7 +65,7 @@ Add or update the `mcpServers` section:
 
 ### Restart Claude Desktop
 
-After saving, restart Claude Desktop. You should see Midday in your available tools.
+After saving, restart Claude Desktop. You should see Lujo in your available tools.
 
 ### Test it
 
@@ -78,7 +78,7 @@ Ask Claude something like:
 
 ## Cursor setup
 
-Use Midday data while coding in Cursor.
+Use Lujo data while coding in Cursor.
 
 ### Open Cursor settings
 
@@ -86,7 +86,7 @@ Use Midday data while coding in Cursor.
 2. Go to Settings (Cmd/Ctrl + ,)
 3. Find the MCP configuration section
 
-### Add Midday
+### Add Lujo
 
 Add to your MCP servers:
 
@@ -110,17 +110,17 @@ In Cursor's AI chat, you can now ask about your financial data while working on 
 
 ## ChatGPT setup
 
-Use Midday with ChatGPT via custom GPTs or plugins.
+Use Lujo with ChatGPT via custom GPTs or plugins.
 
 ### Custom GPT approach
 
 1. Create a Custom GPT in ChatGPT
-2. Add actions that call the Midday API
+2. Add actions that call the Lujo API
 3. Configure authentication with your API key
 
 ### Configuration
 
-Use the Midday API endpoints with your API key in the Authorization header:
+Use the Lujo API endpoints with your API key in the Authorization header:
 
 ```
 Authorization: Bearer your-api-key-here
@@ -132,29 +132,29 @@ See the [API reference](/docs/api-reference) for available endpoints.
 
 ## Raycast setup
 
-Access Midday from Raycast on Mac.
+Access Lujo from Raycast on Mac.
 
 ### Install the extension
 
 1. Open Raycast
-2. Search for "Midday" in the Store
+2. Search for "Lujo" in the Store
 3. Install the extension
 
 ### Configure
 
 1. Open Raycast preferences
-2. Find the Midday extension
+2. Find the Lujo extension
 3. Enter your API key
 
 ### Use it
 
-Trigger Raycast and use Midday commands to query your financial data.
+Trigger Raycast and use Lujo commands to query your financial data.
 
 ---
 
 ## Available tools
 
-The MCP integration provides access to all your Midday data:
+The MCP integration provides access to all your Lujo data:
 
 ### Transactions
 
@@ -270,7 +270,7 @@ The MCP integration provides access to all your Midday data:
 
 > **You**: What's my financial health looking like?
 >
-> **Assistant**: Based on your Midday data:
+> **Assistant**: Based on your Lujo data:
 > - Cash balance: $45,230
 > - Monthly burn rate: $8,500
 > - Runway: 5.3 months
@@ -310,7 +310,7 @@ The MCP integration provides access to all your Midday data:
 
 ### Managing keys
 
-1. Go to [Settings → Developer](https://app.midday.ai/settings/developer)
+1. Go to [Settings → Developer](https://app.lujo.app/settings/developer)
 2. View all active API keys
 3. See last used date for each key
 4. Revoke keys you no longer need

@@ -97,7 +97,7 @@ export async function GET(request: NextRequest) {
       "https://api.github.com/repos/midday-ai/midday/releases/latest",
       {
         headers: {
-          "User-Agent": "Midday-Desktop-Downloader",
+          "User-Agent": "Lujo-Desktop-Downloader",
           Accept: "application/vnd.github.v3+json",
         },
         // Cache for 5 minutes
@@ -133,7 +133,7 @@ export async function GET(request: NextRequest) {
     const version = tag_name.replace(/^midday-v?/, "");
 
     // Construct DMG filename based on version and platform
-    const filename = `Midday_${version}_${platform}.dmg`;
+    const filename = `Lujo_${version}_${platform}.dmg`;
 
     // Construct download URL using the full tag name
     const downloadUrl = `https://github.com/midday-ai/midday/releases/download/${tag_name}/${filename}`;
@@ -141,7 +141,7 @@ export async function GET(request: NextRequest) {
     // Fetch the DMG file from GitHub
     const fileResponse = await fetch(downloadUrl, {
       headers: {
-        "User-Agent": "Midday-Desktop-Downloader",
+        "User-Agent": "Lujo-Desktop-Downloader",
       },
     });
 

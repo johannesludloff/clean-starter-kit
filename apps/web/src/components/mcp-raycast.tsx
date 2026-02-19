@@ -53,7 +53,7 @@ const raycastConfig = {
   args: [
     "-y",
     "mcp-remote@latest",
-    "https://api.midday.ai/mcp",
+    "https://api.lujo.app/mcp",
     "--header",
     // biome-ignore lint/suspicious/noTemplateCurlyInString: Intentional shell variable reference in MCP config
     "Authorization:${AUTH_HEADER}",
@@ -122,7 +122,7 @@ export function MCPRaycast() {
                 and replace <code className="font-mono">YOUR_API_KEY</code> in
                 the environment variables with your{" "}
                 <Link
-                  href="https://app.midday.ai/settings/developer"
+                  href="https://app.lujo.app/settings/developer"
                   className="underline hover:text-foreground"
                 >
                   API key
@@ -166,7 +166,7 @@ export function MCPRaycast() {
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
                     Get an API key from{" "}
                     <Link
-                      href="https://app.midday.ai/settings/developer"
+                      href="https://app.lujo.app/settings/developer"
                       className="underline hover:text-foreground"
                     >
                       Settings → Developer
@@ -178,7 +178,7 @@ export function MCPRaycast() {
                     3
                   </span>
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
-                    Open Raycast's "Manage Servers" and edit Midday to add your
+                    Open Raycast's "Manage Servers" and edit Lujo to add your
                     API key
                   </span>
                 </li>
@@ -187,7 +187,7 @@ export function MCPRaycast() {
                     4
                   </span>
                   <span className="font-sans text-sm text-muted-foreground pt-0.5">
-                    @-mention Midday in Raycast AI to query your data
+                    @-mention Lujo in Raycast AI to query your data
                   </span>
                 </li>
               </ol>

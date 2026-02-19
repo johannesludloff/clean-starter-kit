@@ -3,7 +3,7 @@ import { baseUrl } from "@/app/sitemap";
 
 const title = "About";
 const description =
-  "About Midday. Learn more about the team and company behind your AI-powered business assistant.";
+  "About Lujo. Learn more about the team and company behind your AI-powered business assistant.";
 
 export const metadata: Metadata = {
   title,

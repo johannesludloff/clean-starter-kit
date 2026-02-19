@@ -9,7 +9,7 @@ import type { ReactElement } from "react";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
-import { baseUrl } from "./sitemap";
+import { appConfig, baseUrl } from "@/config/app";
 
 const hedvigSans = Hedvig_Letters_Sans({
   weight: "400",
@@ -31,50 +31,35 @@ const hedvigSerif = Hedvig_Letters_Serif({
   fallback: ["Georgia", "Times New Roman", "serif"],
 });
 
+const ogImage = appConfig.cdn
+  ? `${appConfig.cdn}/opengraph-image-v1.jpg`
+  : `${baseUrl}/opengraph-image.jpg`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Run your business finances without manual work | Midday",
-    template: "%s | Midday",
+    default: `${appConfig.tagline} | ${appConfig.name}`,
+    template: `%s | ${appConfig.name}`,
   },
-  description:
-    "Midday gives you one place for transactions, receipts, invoices and everything around your business finances without manual work.",
+  description: appConfig.description,
   openGraph: {
-    title: "Run your business finances without manual work | Midday",
-    description:
-      "Midday gives you one place for transactions, receipts, invoices and everything around your business finances without manual work.",
+    title: `${appConfig.tagline} | ${appConfig.name}`,
+    description: appConfig.description,
     url: baseUrl,
-    siteName: "Midday",
+    siteName: appConfig.name,
     locale: "en_US",
     type: "website",
     images: [
-      {
-        url: "https://cdn.midday.ai/opengraph-image-v1.jpg",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://cdn.midday.ai/opengraph-image-v1.jpg",
-        width: 1800,
-        height: 1600,
-      },
+      { url: ogImage, width: 800, height: 600 },
+      { url: ogImage, width: 1800, height: 1600 },
     ],
   },
   twitter: {
-    title: "Run your business finances without manual work | Midday",
-    description:
-      "Midday gives you one place for transactions, receipts, invoices and everything around your business finances without manual work.",
+    title: `${appConfig.tagline} | ${appConfig.name}`,
+    description: appConfig.description,
     images: [
-      {
-        url: "https://cdn.midday.ai/opengraph-image-v1.jpg",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://cdn.midday.ai/opengraph-image-v1.jpg",
-        width: 1800,
-        height: 1600,
-      },
+      { url: ogImage, width: 800, height: 600 },
+      { url: ogImage, width: 1800, height: 1600 },
     ],
   },
   robots: {
@@ -100,24 +85,27 @@ export const viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Midday",
-  url: "https://midday.ai",
-  logo: "https://cdn.midday.ai/logo.png",
+  name: appConfig.name,
+  url: baseUrl,
+  logo: appConfig.cdn ? `${appConfig.cdn}/logo.png` : `${baseUrl}/logo.png`,
   sameAs: [
-    "https://x.com/middayai",
-    "https://github.com/midday-ai/midday",
-    "https://linkedin.com/company/midday-ai",
-  ],
-  description:
-    "Midday gives you one place for transactions, receipts, invoices and everything around your business finances without manual work.",
+    appConfig.social.twitter,
+    appConfig.social.github,
+    appConfig.social.linkedin,
+  ].filter(Boolean),
+  description: appConfig.description,
 };
 
 export default function Layout({ children }: { children: ReactElement }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://cdn.midday.ai" />
-        <link rel="dns-prefetch" href="https://cdn.midday.ai" />
+        {appConfig.cdn && (
+          <>
+            <link rel="preconnect" href={appConfig.cdn} />
+            <link rel="dns-prefetch" href={appConfig.cdn} />
+          </>
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -19,7 +19,7 @@ export function ComparisonPage({ competitor }: Props) {
     { id: "features", label: "Feature comparison" },
     { id: "pricing", label: "Pricing comparison" },
     { id: "switching", label: `Switching from ${competitor.name}` },
-    { id: "better-fit", label: "Where Midday is a better fit" },
+    { id: "better-fit", label: "Where Lujo is a better fit" },
     { id: "faq", label: "Frequently asked questions" },
   ];
 
@@ -55,11 +55,11 @@ export function ComparisonPage({ competitor }: Props) {
                   </h3>
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-border">
-                  {/* Midday Column */}
+                  {/* Lujo Column */}
                   <div className="p-6 bg-background relative border-l-4 border-l-primary">
                     <div className="space-y-2">
                       <span className="font-sans text-xs font-semibold text-primary uppercase tracking-wide block">
-                        Midday
+                        Lujo
                       </span>
                       <p className="font-sans text-sm text-foreground leading-relaxed font-medium">
                         {diff.midday}
@@ -111,7 +111,7 @@ export function ComparisonPage({ competitor }: Props) {
         {/* Switching Guide */}
         <section id="switching" className="scroll-mt-24 mb-16 lg:mb-24">
           <h2 className="font-serif text-2xl text-foreground mb-4 text-center">
-            Switching from {competitor.name} to Midday
+            Switching from {competitor.name} to Lujo
           </h2>
           <p className="font-sans text-base text-muted-foreground mb-8 text-center max-w-2xl mx-auto">
             Making the switch is straightforward. Here's how to get started.
@@ -146,13 +146,13 @@ export function ComparisonPage({ competitor }: Props) {
           <div className="h-px w-full border-t border-border" />
         </div>
 
-        {/* Where Midday is a Better Fit */}
+        {/* Where Lujo is a Better Fit */}
         <section id="better-fit" className="scroll-mt-24 mb-16 lg:mb-24">
           <h2 className="font-serif text-2xl text-foreground mb-4 text-center">
-            Where Midday is a better fit
+            Where Lujo is a better fit
           </h2>
           <p className="font-sans text-base text-muted-foreground mb-8 text-center max-w-2xl mx-auto">
-            Midday is the right choice if you're...
+            Lujo is the right choice if you're...
           </p>
           <div className="max-w-2xl mx-auto">
             <div className="bg-secondary border border-border p-6">
@@ -198,7 +198,7 @@ export function ComparisonPage({ competitor }: Props) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="btn-inverse h-11 px-6">
-                  <a href="https://app.midday.ai/">Start your free trial</a>
+                  <a href="https://app.lujo.app/">Start your free trial</a>
                 </Button>
                 <Button
                   asChild

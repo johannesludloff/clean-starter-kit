@@ -5,7 +5,7 @@ import { apps } from "@/data/apps";
 
 const title = "Integrations";
 const description =
-  "Connect Midday with your favorite tools. Explore integrations for email, accounting, productivity, and more.";
+  "Connect Lujo with your favorite tools. Explore integrations for email, accounting, productivity, and more.";
 
 export const metadata: Metadata = {
   title,

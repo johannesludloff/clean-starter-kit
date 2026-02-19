@@ -9,7 +9,7 @@ import { getBlogPosts } from "@/lib/blog";
 
 const title = "Updates";
 const description =
-  "The latest updates and improvements to Midday. See what we've been building to help you manage your business finances better.";
+  "The latest updates and improvements to Lujo. See what we've been building to help you manage your business finances better.";
 
 export const metadata: Metadata = {
   title,

@@ -3,7 +3,7 @@ import { baseUrl } from "@/app/sitemap";
 
 const title = "Terms and Conditions";
 const description =
-  "Terms and Conditions for using Midday. Read about your rights and responsibilities when using our service.";
+  "Terms and Conditions for using Lujo. Read about your rights and responsibilities when using our service.";
 
 export const metadata: Metadata = {
   title,
@@ -43,8 +43,8 @@ export default function TermsPage() {
               <div className="prose prose-sm sm:prose-base max-w-none space-y-6 font-sans text-foreground">
                 <p className="text-muted-foreground leading-relaxed">
                   These Terms and Conditions ("Terms", "Terms and Conditions")
-                  govern your relationship with the Midday application (the
-                  "Service") operated by Midday Labs AB ("us", "we", or "our").
+                  govern your relationship with the Lujo application (the
+                  "Service") operated by Lujo Labs AB ("us", "we", or "our").
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
@@ -71,9 +71,9 @@ export default function TermsPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     At the end of each Billing Cycle, your Subscription will
                     automatically renew under the same conditions unless you
-                    cancel it or Midday Labs AB cancels it. You may cancel your
+                    cancel it or Lujo Labs AB cancels it. You may cancel your
                     Subscription through your online account management page or
-                    by contacting Midday Labs AB's customer support.
+                    by contacting Lujo Labs AB's customer support.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     A valid payment method, including a credit card, is
@@ -83,7 +83,7 @@ export default function TermsPage() {
                     payment method.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    If automatic billing fails, Midday Labs AB will issue an
+                    If automatic billing fails, Lujo Labs AB will issue an
                     invoice and require manual payment within a stated deadline.
                   </p>
                 </section>
@@ -93,7 +93,7 @@ export default function TermsPage() {
                     2. Fee Changes
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB may modify Subscription fees at its sole
+                    Lujo Labs AB may modify Subscription fees at its sole
                     discretion. Any changes will take effect at the end of the
                     current Billing Cycle.
                   </p>
@@ -110,7 +110,7 @@ export default function TermsPage() {
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
                     Refund requests may be considered on a case-by-case basis
-                    and are granted at the sole discretion of Midday Labs AB.
+                    and are granted at the sole discretion of Lujo Labs AB.
                   </p>
                 </section>
 
@@ -140,7 +140,7 @@ export default function TermsPage() {
                     </li>
                   </ul>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB does not verify the accuracy or suitability
+                    Lujo Labs AB does not verify the accuracy or suitability
                     of any financial or tax-related Content shared through the
                     Service. Use of such Content is at your own risk.
                   </p>
@@ -176,7 +176,7 @@ export default function TermsPage() {
                     6. Financial and Tax Disclaimer
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB is not a financial advisor, accountant, or
+                    Lujo Labs AB is not a financial advisor, accountant, or
                     tax consultant. All content and functionality within the
                     Service are provided for general informational purposes only
                     and do not constitute financial, legal, or tax advice.
@@ -189,7 +189,7 @@ export default function TermsPage() {
                     professional.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB accepts no liability for any consequences,
+                    Lujo Labs AB accepts no liability for any consequences,
                     losses, or penalties resulting from your use of the Service
                     for financial or tax purposes.
                   </p>
@@ -200,7 +200,7 @@ export default function TermsPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     The Service may allow you to create, send, and manage
                     invoices and to enable payment through third-party payment
-                    providers. Midday Labs AB does not verify the legal, tax, or
+                    providers. Lujo Labs AB does not verify the legal, tax, or
                     regulatory correctness of any invoice or payment request.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -218,12 +218,12 @@ export default function TermsPage() {
                       jurisdiction;
                     </li>
                     <li>
-                      Midday Labs AB is not responsible for payment disputes,
+                      Lujo Labs AB is not responsible for payment disputes,
                       failed payments, chargebacks, or customer disagreements;
                     </li>
                     <li>
                       Use of third-party payment providers is subject to their
-                      own terms and policies, and Midday Labs AB assumes no
+                      own terms and policies, and Lujo Labs AB assumes no
                       liability for their actions or availability.
                     </li>
                   </ul>
@@ -234,7 +234,7 @@ export default function TermsPage() {
                     7. Reliance on External Services and User-Generated Data
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB relies on third-party services (e.g., banking
+                    Lujo Labs AB relies on third-party services (e.g., banking
                     APIs, payment providers, and financial aggregators) to
                     provide transactional data and related functionality.
                     Additionally, the Service may involve manually inputted or
@@ -250,7 +250,7 @@ export default function TermsPage() {
                       without verification or warranty;
                     </li>
                     <li>
-                      Midday Labs AB cannot guarantee the completeness,
+                      Lujo Labs AB cannot guarantee the completeness,
                       accuracy, timeliness, or reliability of such data;
                     </li>
                     <li>
@@ -258,7 +258,7 @@ export default function TermsPage() {
                       before using it for decisions or reporting;
                     </li>
                     <li>
-                      Midday Labs AB shall not be liable for any loss, damage,
+                      Lujo Labs AB shall not be liable for any loss, damage,
                       or liability arising from the use of such data, including
                       errors, omissions, delays, misinterpretations, or
                       disruptions;
@@ -283,7 +283,7 @@ export default function TermsPage() {
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
                     <li>
-                      Midday Labs AB acts solely as a technical facilitator of
+                      Lujo Labs AB acts solely as a technical facilitator of
                       data transfer and does not control, verify, or validate
                       how third-party accounting systems process, interpret, or
                       apply exported data;
@@ -295,7 +295,7 @@ export default function TermsPage() {
                       purposes;
                     </li>
                     <li>
-                      Midday Labs AB is not responsible for errors, omissions,
+                      Lujo Labs AB is not responsible for errors, omissions,
                       misclassifications, tax treatments, or reporting outcomes
                       resulting from exported data or third-party system
                       behavior;
@@ -338,7 +338,7 @@ export default function TermsPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     The Service and its original content (excluding Content
                     provided by users), features, and functionality are and
-                    remain the property of Midday Labs AB and its licensors.
+                    remain the property of Lujo Labs AB and its licensors.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     Our trademarks and trade dress may not be used without prior
@@ -352,11 +352,11 @@ export default function TermsPage() {
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
                     The Service may contain links to third-party websites or
-                    services that are not controlled by Midday Labs AB.
+                    services that are not controlled by Lujo Labs AB.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     We assume no responsibility for third-party content, privacy
-                    policies, or practices. You agree that Midday Labs AB shall
+                    policies, or practices. You agree that Lujo Labs AB shall
                     not be liable for any loss or damage caused by use of such
                     content or services.
                   </p>
@@ -386,7 +386,7 @@ export default function TermsPage() {
                     12. Limitation of Liability
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Midday Labs AB and its affiliates, directors, employees, and
+                    Lujo Labs AB and its affiliates, directors, employees, and
                     suppliers shall not be liable for any indirect, incidental,
                     special, consequential, or punitive damages, including:
                   </p>
@@ -440,7 +440,7 @@ export default function TermsPage() {
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     These Terms constitute the entire agreement between you and
-                    Midday Labs AB regarding the Service.
+                    Lujo Labs AB regarding the Service.
                   </p>
                 </section>
 

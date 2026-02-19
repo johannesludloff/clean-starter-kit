@@ -1,0 +1,14 @@
+{
+  "name": "@midday/events",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./client": "./src/client.tsx"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14"
+  }
+}

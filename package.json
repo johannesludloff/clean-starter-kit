@@ -9,5 +9,11 @@
     "dev": "bun run --filter \"@midday/website\" dev",
     "build": "bun run --filter \"@midday/website\" build",
     "lint": "bun run --filter \"*\" lint"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.57.0",
+    "lucide-react": "^0.562.0",
+    "react-icons": "^5.5.0",
+    "zod": "^3.25.67"
   }
 }

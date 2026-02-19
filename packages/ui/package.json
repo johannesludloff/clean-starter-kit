@@ -87,8 +87,7 @@
     "./suggestion": "./src/components/suggestion.tsx",
     "./text-shimmer": "./src/components/text-shimmer.tsx",
     "./text-effect": "./src/components/text-effect.tsx",
-    "./tool-call-indicator": "./src/components/tool-call-indicator.tsx",
-    "./web-search-sources": "./src/components/web-search-sources.tsx"
+    "./tool-call-indicator": "./src/components/tool-call-indicator.tsx"
   },
   "dependencies": {
     "@midday/utils": "workspace:*",
@@ -126,11 +125,11 @@
     "@tiptap/starter-kit": "^2.12.0",
     "@tiptap/suggestion": "^2.12.0",
     "@uidotdev/usehooks": "^2.4.1",
-    "ai": "catalog:",
+    "ai": "^6.0.86",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.1.1",
-    "date-fns": "catalog:",
+    "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.34.0",
     "input-otp": "^1.4.2",
@@ -151,8 +150,8 @@
   "devDependencies": {
     "@types/react-syntax-highlighter": "^15.5.13",
     "autoprefixer": "^10.4.23",
-    "react": "catalog:",
-    "react-dom": "catalog:",
-    "typescript": "catalog:"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.8.3"
   }
 }

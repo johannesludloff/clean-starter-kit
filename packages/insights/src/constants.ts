@@ -1,5 +1,5 @@
 /**
- * Constants and configuration for @midday/insights
+ * Constants and configuration for@midday/insights
  */
 import type { MetricCategory, PeriodType } from "./types";
 

@@ -134,7 +134,7 @@ export const mocks = {
 // Create a default mock function that returns empty data
 const createDefaultMock = () => mock(() => null);
 
-// Mock @midday/db/queries with a Proxy to handle any export
+// Mock@midday/db/queries with a Proxy to handle any export
 const dbQueriesMock = new Proxy(
   {
     // Transaction functions
@@ -264,13 +264,13 @@ const dbQueriesMock = new Proxy(
 
 mock.module("@midday/db/queries", () => dbQueriesMock);
 
-// Mock @midday/supabase/storage
+// Mock@midday/supabase/storage
 mock.module("@midday/supabase/storage", () => ({
   signedUrl: mocks.signedUrl,
   remove: mock(() => Promise.resolve({ error: null })),
 }));
 
-// Mock @midday/job-client
+// Mock@midday/job-client
 mock.module("@midday/job-client", () => ({
   triggerJob: mocks.triggerJob,
   getQueue: mock(() => ({
@@ -280,12 +280,12 @@ mock.module("@midday/job-client", () => ({
   decodeJobId: mock((id: string) => ({ id, queue: "default" })),
 }));
 
-// Mock @midday/import
+// Mock@midday/import
 mock.module("@midday/import", () => ({
   formatAmountValue: mocks.formatAmountValue,
 }));
 
-// Mock @midday/invoice
+// Mock@midday/invoice
 mock.module("@midday/invoice/calculate", () => ({
   calculateTotal: mock(({ lineItems }: { lineItems: any[] }) => ({
     subTotal: lineItems.reduce(
@@ -346,14 +346,14 @@ mock.module("@api/utils/auth", () => ({
   })),
 }));
 
-// Mock @midday/db/client
+// Mock@midday/db/client
 mock.module("@midday/db/client", () => ({
   db: mockDb,
   primaryDb: mockDb,
   connectDb: mock(async () => mockDb),
 }));
 
-// Mock @midday/cache/team-cache
+// Mock@midday/cache/team-cache
 mock.module("@midday/cache/team-cache", () => ({
   teamCache: {
     get: mock(async () => true), // Always return cached access = true

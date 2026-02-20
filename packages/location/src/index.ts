@@ -5,7 +5,7 @@ import timezones from "./timezones.json";
 
 /**
  * Parse the primary locale from an Accept-Language header value.
- * Returns the first language tag (e.g. "en-US" from "en-US,en;q=0.9").
+ * Returns the first language tag (e.g. "en-US"from "en-US,en;q=0.9").
  */
 export function parseLocale(acceptLanguage: string | null): string {
   if (!acceptLanguage) return "en-US";

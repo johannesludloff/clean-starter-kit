@@ -56,7 +56,7 @@ import { z } from "zod";
 
 const logger = createLoggerWithContext("trpc:invoice");
 
-// Use the shared default template from @midday/invoice
+// Use the shared default template from@midday/invoice
 const defaultTemplate = DEFAULT_TEMPLATE;
 
 export const invoiceRouter = createTRPCRouter({

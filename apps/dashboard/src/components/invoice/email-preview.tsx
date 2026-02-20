@@ -173,7 +173,7 @@ export function EmailPreview() {
   }
 
   // Display values — plain text, no template variable resolution.
-  // Defaults are imported from @midday/email/defaults so they stay in sync
+  // Defaults are imported from@midday/email/defaults so they stay in sync
   // with the actual email template the customer receives.
   const displaySubject = emailSubject || defaultEmailSubject(teamName);
   const displayHeading = emailHeading || defaultEmailHeading(teamName);

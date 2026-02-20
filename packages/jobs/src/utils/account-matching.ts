@@ -14,7 +14,7 @@ export { findMatchingAccount };
 /**
  * Matches API accounts to existing database accounts and updates their account_id.
  *
- * Uses findMatchingAccount from @midday/supabase for the pure matching logic,
+ * Uses findMatchingAccount from@midday/supabase for the pure matching logic,
  * then handles the database updates and logging.
  */
 export async function matchAndUpdateAccountIds({

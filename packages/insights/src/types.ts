@@ -1,5 +1,5 @@
 /**
- * Core types for the @midday/insights package
+ * Core types for the@midday/insights package
  */
 
 // Import and re-export InsightPredictions from schema (single source of truth)
@@ -246,7 +246,7 @@ export type PeriodInfo = {
   periodYear: number;
 };
 
-// InsightPredictions is defined in @midday/db/schema - import from there
+// InsightPredictions is defined in@midday/db/schema - import from there
 
 /**
  * Context from previous week's predictions for follow-through

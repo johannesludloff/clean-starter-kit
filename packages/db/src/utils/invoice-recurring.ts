@@ -8,7 +8,7 @@ import {
   setDay,
 } from "date-fns";
 
-// Re-export canonical types from @midday/invoice
+// Re-export canonical types from@midday/invoice
 // This ensures a single source of truth for recurring invoice types
 export type {
   InvoiceRecurringEndType,

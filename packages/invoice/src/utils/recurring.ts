@@ -291,7 +291,7 @@ export function formatNextScheduled(
 // They provide approximate next invoice dates for display in the dashboard.
 //
 // IMPORTANT: These are simplified calculations without timezone support.
-// The server-side calculations in @midday/db/utils/invoice-recurring use
+// The server-side calculations in@midday/db/utils/invoice-recurring use
 // proper timezone handling via @date-fns/tz and are the authoritative source
 // for actual invoice scheduling.
 //

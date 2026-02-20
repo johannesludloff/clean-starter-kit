@@ -6,8 +6,8 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "bun run --filter \"@lujo/website\" dev",
-    "build": "bun run --filter \"@lujo/website\" build",
+    "dev": "bun run --filter \"@midday/website\" dev",
+    "build": "bun run --filter \"@midday/website\" build",
     "dev:api": "bun run --filter \"@midday/api\" dev",
     "dev:dashboard": "bun run --filter \"@midday/dashboard\" dev",
     "build:dashboard": "bun run --filter \"@midday/dashboard\" build",
